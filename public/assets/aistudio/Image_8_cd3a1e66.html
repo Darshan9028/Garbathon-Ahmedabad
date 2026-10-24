@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#ffb95f","inverse-on-surface":"#f8edff","inverse-surface":"#362c42","on-surface":"#20172c","surface-container-highest":"#ecddfa","on-secondary-fixed-variant":"#653e00","surface-container-low":"#faf0ff","inverse-primary":"#d0c0e8","on-tertiary":"#ffffff","tertiary-fixed":"#e1e0ff","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#2f2ebe","on-background":"#20172c","on-primary-container":"#8b7da3","tertiary-container":"#07006c","surface-variant":"#ecddfa","outline":"#7a757e","on-primary-fixed":"#211635","on-error":"#ffffff","primary-fixed-dim":"#d0c0e8","on-error-container":"#93000a","on-tertiary-fixed":"#07006c","outline-variant":"#cbc4ce","on-secondary-container":"#684000","primary-fixed":"#ebdcff","on-surface-variant":"#49454d","on-secondary-fixed":"#2a1700","primary-container":"#211635","surface-container-high":"#f2e2ff","secondary-fixed":"#ffddb8","surface-dim":"#e4d4f2","tertiary-fixed-dim":"#c0c1ff","tertiary":"#000000","error":"#ba1a1a","error-container":"#ffdad6","on-primary-fixed-variant":"#4d4163","on-secondary":"#ffffff","surface-container":"#f6e9ff","background":"#fff7ff","surface-bright":"#fff7ff","secondary-container":"#fea619","surface":"#fff7ff","primary":"#000000","on-tertiary-container":"#7073ff","secondary":"#855300","surface-tint":"#65587c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.25rem","gutter":"1rem","margin-desktop":"2rem","space-md":"0.75rem","space-xl":"2rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","margin-tablet":"1.5rem"},"fontFamily":{"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"mono-data":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"mono-data":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><img alt="JobHunt Autopilot AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZJW1iuCjZPIDLFO7wUdNgWbSFPoKB4v7IHDScBHEJwGXmnSVQdswS4auKwpY4hWT4FnApIV5vE8wTuYNl8X21H3OqBg0NM1xDIQvOZ86iLZS-FtBPIlpgEA5VZZ64k8RdNYRUwberEJgoS-xdDYmqSh1cN-Udk-SxdabRj5Z6ROF6Q0XH8G3JmvuOuj54UuksZPU0veR_Iy1JQAr7B5f9XvaAfKPsZk669ijX5y_gpxLurjPZGWD8RqY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">JobHunt AI</span><div class="flex items-center gap-1 mt-0.5"><span class="font-mono-data text-[10px] text-on-surface-variant font-medium">v1.4</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-[10px] text-secondary font-semibold">GDG Ahmedabad</span></div></div></div></div><nav class="flex flex-col gap-1 px-space-sm mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="dashboard" href="#dashboard"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="inbox-analyzer" href="#inbox-analyzer"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">mark_email_read</span><span class="font-body-md text-body-md">Inbox Analyzer</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">20 Loaded</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 rounded-lg transition-colors group bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="application-tracker" href="#tracker"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-body-md text-body-md">Tracker</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">18</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="scam-detection" href="#scam-detection"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">gshield</span><span class="font-body-md text-body-md">Scam Detection</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-medium">3 Alerts</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="follow-ups" href="#follow-ups"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-body-md text-body-md">Follow-ups</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-medium">4 Due</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="interview-prep" href="#interview-prep"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-body-md text-body-md">Interview Prep</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="settings" href="#settings"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm flex flex-col gap-space-sm bg-surface-container-lowest"><div class="px-space-sm py-2 rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm text-on-surface">Gemini Flash 2.5</span></div><span class="font-mono-data text-[10px] text-secondary font-semibold uppercase tracking-wider">Active</span></div><div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tWTLj4FhhS9sDygLzQgzWq3Sd9HGVR-VdhFsWBiPgIYxFpWN7zFdo4ptOsMo18GovNZbnnOvW66vO7At5aXi_Y6vpJSN52sM40tpb9uLQKfjcXKa4VTnGwxVYuri5S1pwLMcgQXEjp_aVOnD_qKSD32OgPmCQN1nDfdt-U1AsFD_b1iQL7kpexvskiupNraDOCRz5UswivvYv74aWt4ek5EJzvGSbyCHEa3eLsz5Ycmm7xmftUN4"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between"><span class="font-headline-sm text-[13px] text-on-surface truncate">Arjun Sharma</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><span class="font-body-sm text-[11px] text-on-surface-variant truncate">Senior Full-Stack</span><span class="font-label-sm text-[10px] text-secondary-container font-semibold mt-0.5">Active Search</span></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center text-on-surface-variant font-body-sm text-body-sm gap-1.5"><span class="text-on-surface-variant/70">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-semibold">Autopilot Console</span></div><div class="h-4 w-px bg-outline-variant/40 mx-1"></div><div class="relative flex items-center w-72"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search 20 applications, companies, emails..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Demo Data: Active (20 Synced)</span></div><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>+ Analyze Inbox</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center"><button class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-outline-variant transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tWTLj4FhhS9sDygLzQgzWq3Sd9HGVR-VdhFsWBiPgIYxFpWN7zFdo4ptOsMo18GovNZbnnOvW66vO7At5aXi_Y6vpJSN52sM40tpb9uLQKfjcXKa4VTnGwxVYuri5S1pwLMcgQXEjp_aVOnD_qKSD32OgPmCQN1nDfdt-U1AsFD_b1iQL7kpexvskiupNraDOCRz5UswivvYv74aWt4ek5EJzvGSbyCHEa3eLsz5Ycmm7xmftUN4"/></button></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Command & Action Canvas -->
+<div class="px-space-xl pt-space-lg pb-space-md flex flex-col gap-space-md">
+<!-- Breadcrumb & Header Title Area -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-mono-data text-[11px] uppercase tracking-wider text-secondary font-semibold bg-secondary-fixed/50 px-2 py-0.5 rounded">Real-time Inbox Sync</span>
+<span class="font-mono-data text-[11px] text-on-surface-variant flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            Last analyzed 3m ago via Gemini Flash
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Application Tracker</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 max-w-3xl">
+          18 active applications automatically extracted, synchronized, and categorized from your inbox.
+        </p>
+</div>
+<!-- Quick Actions -->
+<div class="flex items-center gap-space-sm flex-wrap self-start lg:self-center">
+<!-- View Toggle -->
+<div class="inline-flex p-0.5 rounded-xl bg-surface-container shadow-inner">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md shadow-sm transition-all" id="viewBtnKanban" onclick="switchView('kanban')">
+<span class="material-symbols-outlined text-[18px]">view_kanban</span>
+<span>Kanban Board</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="viewBtnTable" onclick="switchView('table')">
+<span class="material-symbols-outlined text-[18px]">table_rows</span>
+<span>Data Table</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">file_download</span>
+<span>Export CSV / JSON</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm hover:opacity-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Add Manual Application</span>
+</button>
+</div>
+</div>
+<!-- Filter Bar & Search Omnibar -->
+<div class="p-space-sm bg-surface-container-lowest rounded-xl shadow-sm flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-sm">
+<!-- Role Filters (Scrollable horizontal pills) -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 xl:pb-0 scrollbar-none">
+<button class="px-3 py-1 rounded-full text-on-primary bg-primary font-label-sm text-label-sm whitespace-nowrap shadow-xs">
+          All Roles (18)
+        </button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors">
+          Full-Stack / Frontend (11)
+        </button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors">
+          Backend / Platform (5)
+        </button>
+<button class="px-3 py-1 rounded-full text-on-surface-variant hover:text-on-surface bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm whitespace-nowrap transition-colors">
+          Data / ML (2)
+        </button>
+</div>
+<!-- Search Omnibar & Filter Drops -->
+<div class="flex items-center gap-space-sm flex-wrap xl:flex-nowrap">
+<div class="relative flex items-center min-w-[260px] flex-1 xl:flex-none">
+<span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container transition-all" placeholder="Search company, job role, or location..." type="text"/>
+</div>
+<!-- Status Filter Menu Dropdown Pill -->
+<div class="relative inline-block text-left">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[16px] text-outline">tune</span>
+<span>Filter Status</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</button>
+</div>
+<!-- Quick Highlight Badges -->
+<div class="hidden sm:flex items-center gap-1.5">
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">event</span>
+<span>3 Interviews</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span>4 Follow-ups Overdue</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Dynamic Workspace: Multi-Pane Board + Fixed Right Inspector -->
+<div class="relative px-space-xl pb-space-xl flex gap-space-lg items-start overflow-hidden">
+<!-- Left Workspace (Kanban View) -->
+<div class="flex-1 min-w-0 transition-all duration-300" id="kanbanWorkspace">
+<div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-space-md items-start">
+<!-- COLUMN 1: APPLIED (8) -->
+<div class="flex flex-col rounded-xl bg-surface-container-low/70 p-3 min-w-0 shadow-xs">
+<!-- Column Header -->
+<div class="flex items-center justify-between px-1.5 py-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-tint"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Applied</h2>
+</div>
+<span class="font-mono-data text-mono-data px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-semibold">8</span>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col gap-2.5">
+<!-- Card 1: Google India -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all group hover:-translate-y-0.5" onclick="selectApplication('google')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface font-bold text-sm">G</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold group-hover:text-primary-container leading-tight">Google India</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Staff Cloud Engineer (L5)</p>
+</div>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">6d ago</span>
+</div>
+<div class="mt-3 flex items-center gap-1.5 text-on-surface-variant text-[11px] font-body-sm bg-surface-container-low/80 p-2 rounded-lg">
+<span class="material-symbols-outlined text-[15px] text-secondary">mark_email_read</span>
+<span class="truncate">"Application In Review by Committee"</span>
+</div>
+<div class="mt-3 pt-2.5 flex items-center justify-between text-[11px]">
+<div class="flex items-center gap-1 text-on-surface-variant font-mono-data">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Bangalore</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-highest text-on-primary-fixed-variant font-medium">In Review</span>
+</div>
+</div>
+<!-- Card 2: Atlassian -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all group hover:-translate-y-0.5" onclick="selectApplication('atlassian')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface font-bold text-sm">A</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold group-hover:text-primary-container leading-tight">Atlassian</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Senior Full Stack Developer</p>
+</div>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">8d ago</span>
+</div>
+<div class="mt-3 flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant font-mono-data text-[11px]">
+<span class="material-symbols-outlined text-[14px]">home_work</span>
+<span>Remote (India)</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Follow-up Due (8d)
+                </span>
+</div>
+</div>
+<!-- Card 3: Microsoft -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all group hover:-translate-y-0.5" onclick="selectApplication('microsoft')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface font-bold text-sm">M</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold group-hover:text-primary-container leading-tight">Microsoft</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">SDE II (Azure Core)</p>
+</div>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">4d ago</span>
+</div>
+<div class="mt-3 flex items-center justify-between text-[11px]">
+<div class="flex items-center gap-1 text-on-surface-variant font-mono-data">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Hyderabad</span>
+</div>
+<span class="font-mono-data text-[11px] text-on-surface-variant">Portal Synced</span>
+</div>
+</div>
+<!-- Card 4: CRED -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all group hover:-translate-y-0.5" onclick="selectApplication('cred')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface font-bold text-sm">C</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold group-hover:text-primary-container leading-tight">CRED</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Frontend Architect</p>
+</div>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">9d ago</span>
+</div>
+<div class="mt-3 flex items-center justify-between">
+<div class="flex items-center gap-1 text-on-surface-variant font-mono-data text-[11px]">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>Bangalore</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Follow-up Due (9d)
+                </span>
+</div>
+</div>
+<!-- Subtle load more indicator for remaining 4 cards -->
+<div class="py-2 text-center">
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface py-1 px-3 rounded-lg hover:bg-surface-container transition-colors">
+                + 4 more applied applications
+              </button>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: INTERVIEWING (3) -->
+<div class="flex flex-col rounded-xl bg-tertiary-fixed/30 p-3 min-w-0 shadow-xs">
+<!-- Column Header -->
+<div class="flex items-center justify-between px-1.5 py-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Interviewing</h2>
+</div>
+<span class="font-mono-data text-mono-data px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold">3</span>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col gap-2.5">
+<!-- Card 1: Zepto (Active in drawer) -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-md cursor-pointer transition-all group ring-2 ring-primary-container relative" onclick="selectApplication('zepto')">
+<div class="absolute -top-2 right-3 font-mono-data text-[9px] uppercase tracking-wider font-bold bg-primary text-on-primary px-2 py-0.5 rounded-full shadow-xs">
+                Selected
+              </div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface font-bold text-sm">Z</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold leading-tight">Zepto</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Senior Frontend Engineer</p>
+</div>
+</div>
+</div>
+<!-- Interview Alert Strip -->
+<div class="mt-3 p-2.5 rounded-lg bg-tertiary-fixed/60 flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-on-tertiary-fixed-variant font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">videocam</span>
+                    Round 2: System Design
+                  </span>
+<span class="font-mono-data text-[10px] text-on-surface-variant font-semibold">Tomorrow, 2:00 PM</span>
+</div>
+<div class="flex items-center justify-between mt-1">
+<span class="font-body-sm text-[11px] text-on-surface">Google Meet Link attached</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between text-[11px]">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-semibold">Stage 2 of 4</span>
+<span class="font-mono-data text-secondary font-semibold">4 emails synced</span>
+</div>
+</div>
+<!-- Card 2: Razorpay -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all group hover:-translate-y-0.5" onclick="selectApplication('razorpay')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface font-bold text-sm">R</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold group-hover:text-primary-container leading-tight">Razorpay</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Platform Engineer</p>
+</div>
+</div>
+</div>
+<div class="mt-3 p-2 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-[11px] text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">assignment</span>
+                  Take-Home Evaluation
+                </span>
+<span class="font-mono-data text-[10px] text-on-surface-variant">Due Friday 4:30 PM (Kafka Stream)</span>
+</div>
+<div class="mt-2.5 flex items-center justify-between text-[11px]">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed-variant font-medium">Technical Deep-dive</span>
+<span class="font-mono-data text-on-surface-variant">Bangalore</span>
+</div>
+</div>
+<!-- Card 3: Blinkit -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all group hover:-translate-y-0.5" onclick="selectApplication('blinkit')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface font-bold text-sm">B</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold group-hover:text-primary-container leading-tight">Blinkit</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Staff Engineer</p>
+</div>
+</div>
+</div>
+<div class="mt-3 p-2 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-[11px] text-on-surface font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+                  HM Screen
+                </span>
+<span class="font-mono-data text-[10px] text-secondary font-semibold">Monday 11:00 AM</span>
+</div>
+<div class="mt-2.5 flex items-center justify-between text-[11px]">
+<span class="font-mono-data text-on-surface-variant">Gurugram / Hybrid</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container text-on-surface">Round 1</span>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: OFFERS (1) -->
+<div class="flex flex-col rounded-xl bg-secondary-fixed/30 p-3 min-w-0 shadow-xs">
+<!-- Column Header -->
+<div class="flex items-center justify-between px-1.5 py-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Offers</h2>
+</div>
+<span class="font-mono-data text-mono-data px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-bold">1</span>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col gap-2.5">
+<!-- Card 1: Swiggy -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all group hover:-translate-y-0.5" onclick="selectApplication('swiggy')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-secondary font-bold text-sm">S</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold group-hover:text-primary-container leading-tight">Swiggy</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Senior Software Engineer (Platform)</p>
+</div>
+</div>
+<span class="font-label-sm text-[10px] bg-secondary-container text-on-secondary-fixed font-bold px-1.5 py-0.5 rounded uppercase">Verified</span>
+</div>
+<!-- Offer Details Box -->
+<div class="mt-3 p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-mono-data text-[10px] text-on-surface-variant uppercase tracking-wider font-semibold">Base + ESOPs</span>
+<span class="font-headline-sm text-[15px] font-bold text-on-surface">₹34,00,000</span>
+</div>
+<div class="h-1 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-3/4 rounded-full"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-1">
+<span class="font-label-sm text-secondary-container font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">alarm</span>
+                    4 days left to accept
+                  </span>
+<span class="font-mono-data text-[10px] text-on-surface-variant">Nov 15, 2024</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-bold">
+                  Pending Acceptance
+                </span>
+<button class="font-label-sm text-label-sm text-on-surface hover:text-primary underline flex items-center gap-0.5">
+                  View Offer
+                  <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 4: REJECTED / INACTIVE (6) -->
+<div class="flex flex-col rounded-xl bg-surface-container-low/60 p-3 min-w-0 opacity-90 shadow-xs">
+<!-- Column Header -->
+<div class="flex items-center justify-between px-1.5 py-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface-variant">Rejected / Inactive</h2>
+</div>
+<span class="font-mono-data text-mono-data px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-semibold">6</span>
+</div>
+<!-- Cards Stack -->
+<div class="flex flex-col gap-2.5">
+<!-- Card 1: Amazon India -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow cursor-pointer transition-all group" onclick="selectApplication('amazon')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface-variant font-bold text-sm">AM</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold leading-tight">Amazon India</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">SDE II</p>
+</div>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Oct 12</span>
+</div>
+<div class="mt-2.5 p-2 rounded-lg bg-surface-container-low/60 text-on-surface-variant font-body-sm text-[11px] italic">
+                "Moving forward with other candidates who more closely align..."
+              </div>
+<div class="mt-2.5 flex items-center justify-between text-[11px]">
+<span class="font-mono-data text-[10px] text-outline">Auto-archived</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-error-container text-on-error-container font-medium">Rejection Parsed</span>
+</div>
+</div>
+<!-- Card 2: Flipkart -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow cursor-pointer transition-all group" onclick="selectApplication('flipkart')">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center font-headline-sm text-headline-sm text-on-surface-variant font-bold text-sm">FK</div>
+<div>
+<h3 class="font-headline-sm text-[14px] text-on-surface font-semibold leading-tight">Flipkart</h3>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">UI Architect</p>
+</div>
+</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">Oct 04</span>
+</div>
+<div class="mt-2.5 flex items-center justify-between text-[11px]">
+<span class="font-mono-data text-[10px] text-outline">ATS Notice</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface-variant">Closed</span>
+</div>
+</div>
+<!-- View All Inactive -->
+<div class="py-2 text-center">
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface py-1 px-3 rounded-lg hover:bg-surface-container transition-colors">
+                + 4 more inactive records
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Alternate Data Table View (Hidden by default, triggered via toggle) -->
+<div class="flex-1 min-w-0 hidden transition-all duration-300" id="tableWorkspace">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-mono-data text-[11px] uppercase tracking-wider">
+<th class="py-3 px-4">Company &amp; Role</th>
+<th class="py-3 px-4">Status &amp; Column</th>
+<th class="py-3 px-4">Applied Date</th>
+<th class="py-3 px-4">Location</th>
+<th class="py-3 px-4">Next Action / AI Note</th>
+<th class="py-3 px-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm text-on-surface">
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectApplication('zepto')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-surface-container flex items-center justify-center font-bold text-xs">Z</div>
+<div>
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface">Zepto</span>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Senior Frontend Engineer</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-bold">Interviewing (R2)</span>
+</td>
+<td class="py-3.5 px-4 font-mono-data text-[12px]">Oct 14 (17d ago)</td>
+<td class="py-3.5 px-4 font-mono-data text-[12px]">Mumbai / Remote</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5 text-secondary font-medium text-[12px]">
+<span class="material-symbols-outlined text-[15px]">videocam</span>
+                    System Design (Tomorrow 2:00 PM)
+                  </div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectApplication('swiggy')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-surface-container flex items-center justify-center font-bold text-xs text-secondary">S</div>
+<div>
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface">Swiggy</span>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Senior Software Engineer</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed-variant font-bold">Offer Extended</span>
+</td>
+<td class="py-3.5 px-4 font-mono-data text-[12px]">Oct 01</td>
+<td class="py-3.5 px-4 font-mono-data text-[12px]">Bangalore</td>
+<td class="py-3.5 px-4">
+<span class="text-secondary-container font-medium text-[12px]">₹34 LPA · Deadline in 4 days</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low/50 transition-colors cursor-pointer" onclick="selectApplication('atlassian')">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded bg-surface-container flex items-center justify-center font-bold text-xs">A</div>
+<div>
+<span class="font-headline-sm text-[13px] font-semibold text-on-surface">Atlassian</span>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Senior Full Stack Developer</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface font-medium">Applied</span>
+</td>
+<td class="py-3.5 px-4 font-mono-data text-[12px]">Oct 23 (8d ago)</td>
+<td class="py-3.5 px-4 font-mono-data text-[12px]">Remote</td>
+<td class="py-3.5 px-4">
+<span class="text-secondary font-semibold text-[12px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+                    Follow-up Overdue (8 days since confirmation)
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- RIGHT INSPECTOR RAIL (Docked Detail Drawer: 380px fixed width) -->
+<aside class="w-[380px] shrink-0 bg-surface-container-lowest rounded-2xl shadow-lg p- space-md flex flex-col gap-space-md transition-all duration-300" id="inspectorDrawer">
+<!-- Drawer Header & Controls -->
+<div class="flex items-start justify-between pb-2">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary-container flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-xs">
+            Z
+          </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="drawerCompanyTitle">Zepto</h3>
+<span class="font-label-sm text-[10px] bg-tertiary-fixed text-on-tertiary-fixed-variant font-bold px-1.5 py-0.5 rounded">R2 Active</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant" id="drawerRoleSubtitle">Senior Frontend Engineer</p>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant" title="Full Screen View">
+<span class="material-symbols-outlined text-[18px]">open_in_full</span>
+</button>
+<button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant" onclick="toggleDrawer()" title="Close Inspector">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Recruiter & Contact Meta Pill -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<span class="font-mono-data text-[10px] uppercase tracking-wider text-on-surface-variant font-semibold">Primary Recruiter Contact</span>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center font-bold text-xs">
+              PV
+            </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[12px] text-on-surface font-semibold leading-tight">Pooja V.</span>
+<span class="font-mono-data text-[11px] text-on-surface-variant">talent@zeptonow.com</span>
+</div>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container shadow-xs">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+</button>
+</div>
+</div>
+<!-- Quick Action Triggers (Amber AI Kinetic) -->
+<div class="grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-[11px] font-bold shadow-xs hover:bg-secondary-fixed-dim transition-all">
+<span class="material-symbols-outlined text-[16px]">psychology</span>
+<span>Interview Brief</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-[11px] font-semibold hover:bg-surface-container transition-all">
+<span class="material-symbols-outlined text-[16px]">calendar_add_on</span>
+<span>Add to Calendar</span>
+</button>
+</div>
+<!-- Application Timeline -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md text-on-surface">Application Journey</h4>
+<span class="font-mono-data text-[10px] text-on-surface-variant font-semibold">4 Milestones</span>
+</div>
+<div class="relative pl-6 flex flex-col gap-3 py-1">
+<!-- Timeline Vertical Bar -->
+<div class="absolute left-2.5 top-2 bottom-2 w-0.5 bg-surface-container-high"></div>
+<!-- Step 1: Applied -->
+<div class="relative flex flex-col text-[12px]">
+<span class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-surface-container flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-on-surface-variant"></span>
+</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[12px] text-on-surface font-medium">Applied via LinkedIn</span>
+<span class="font-mono-data text-[10px] text-on-surface-variant">Oct 14</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Resume variant: FullStack_v2.pdf</span>
+</div>
+<!-- Step 2: Screen -->
+<div class="relative flex flex-col text-[12px]">
+<span class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[12px] text-on-surface font-medium">Recruiter Phone Screen</span>
+<span class="font-mono-data text-[10px] text-on-surface-variant">Oct 18</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Completed (15m discussion on notice period)</span>
+</div>
+<!-- Step 3: Coding Challenge Passed -->
+<div class="relative flex flex-col text-[12px]">
+<span class="absolute -left-6 top-1 w-3.5 h-3.5 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[12px] text-on-surface font-medium">Round 1: Coding Test</span>
+<span class="font-mono-data text-[10px] text-secondary font-semibold">Passed (94%)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Oct 21 — React, Virtualization &amp; memoization</span>
+</div>
+<!-- Step 4: Next Scheduled -->
+<div class="relative flex flex-col text-[12px] bg-tertiary-fixed/30 p-2.5 rounded-xl">
+<span class="absolute -left-6 top-3 w-3.5 h-3.5 rounded-full bg-primary flex items-center justify-center ring-2 ring-surface-container-lowest">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-container-lowest animate-ping"></span>
+</span>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[12px] text-on-surface font-bold">Round 2: System Design</span>
+<span class="font-mono-data text-[10px] bg-primary text-on-primary px-1.5 py-0.5 rounded font-bold">Upcoming</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant mt-0.5">Tomorrow, 2:00 PM — 3:00 PM IST</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant mt-0.5">Focus: High-concurrency cart orchestration &amp; Web Vitals</span>
+</div>
+</div>
+</div>
+<!-- Associated Raw Emails Extracted (2 parsed items) -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md text-on-surface">Extracted Email Trail (2)</h4>
+<span class="font-mono-data text-[10px] text-on-surface-variant">IMAP Verified</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Email item 1 -->
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-1 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[11px] font-semibold text-on-surface truncate">Invitation: Zepto Frontend System Design</span>
+<span class="font-mono-data text-[10px] text-on-surface-variant shrink-0">Yesterday</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-2">
+              "Hi Arjun, glad to inform that your Round 1 challenge scored exceptionally high. We'd like to schedule your system design..."
+            </p>
+<div class="flex items-center justify-between mt-1 pt-1 border-t border-surface-container">
+<span class="font-label-sm text-[10px] text-secondary font-medium">Link: meet.google.com/xyz-zepto-rnd</span>
+<button class="font-label-sm text-[10px] text-on-surface hover:text-primary font-semibold flex items-center gap-0.5">
+                View Raw
+                <span class="material-symbols-outlined text-[12px]">visibility</span>
+</button>
+</div>
+</div>
+<!-- Email item 2 -->
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-1 hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[11px] font-semibold text-on-surface truncate">Zepto Coding Assessment Confirmation</span>
+<span class="font-mono-data text-[10px] text-on-surface-variant shrink-0">Oct 20</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant line-clamp-1">
+              "Your HackerRank assessment has been successfully submitted."
+            </p>
+<div class="flex items-center justify-end">
+<button class="font-label-sm text-[10px] text-on-surface hover:text-primary font-semibold flex items-center gap-0.5">
+                View Raw
+                <span class="material-symbols-outlined text-[12px]">visibility</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick AI Automation Control footer inside drawer -->
+<div class="mt-auto pt-2 border-t border-surface-container flex items-center justify-between text-[11px]">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">smart_toy</span>
+<span>Autopilot Follow-up: <strong class="text-on-surface">Armed</strong></span>
+</div>
+<button class="font-label-sm text-[11px] text-secondary hover:underline font-semibold">
+          Configure Trigger
+        </button>
+</div>
+</aside>
+</div>
+</div>
+<!-- Inline Interactive Script for View Toggle and Detail Selection -->
+<script>
+  function switchView(view) {
+    const kanban = document.getElementById('kanbanWorkspace');
+    const table = document.getElementById('tableWorkspace');
+    const btnKanban = document.getElementById('viewBtnKanban');
+    const btnTable = document.getElementById('viewBtnTable');
+
+    if (view === 'table') {
+      kanban.classList.add('hidden');
+      table.classList.remove('hidden');
+      
+      btnTable.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md shadow-sm transition-all";
+      btnKanban.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all";
+    } else {
+      table.classList.add('hidden');
+      kanban.classList.remove('hidden');
+
+      btnKanban.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-primary bg-primary font-label-md text-label-md shadow-sm transition-all";
+      btnTable.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all";
+    }
+  }
+
+  function toggleDrawer() {
+    const drawer = document.getElementById('inspectorDrawer');
+    if (drawer.classList.contains('hidden')) {
+      drawer.classList.remove('hidden');
+    } else {
+      drawer.classList.add('hidden');
+    }
+  }
+
+  function selectApplication(key) {
+    const drawer = document.getElementById('inspectorDrawer');
+    drawer.classList.remove('hidden');
+
+    const title = document.getElementById('drawerCompanyTitle');
+    const subtitle = document.getElementById('drawerRoleSubtitle');
+
+    if (key === 'swiggy') {
+      title.innerText = 'Swiggy';
+      subtitle.innerText = 'Senior Software Engineer (Platform)';
+    } else if (key === 'google') {
+      title.innerText = 'Google India';
+      subtitle.innerText = 'Staff Cloud Engineer (L5)';
+    } else if (key === 'atlassian') {
+      title.innerText = 'Atlassian';
+      subtitle.innerText = 'Senior Full Stack Developer';
+    } else {
+      title.innerText = 'Zepto';
+      subtitle.innerText = 'Senior Frontend Engineer';
+    }
+  }
+</script></main></div></body></html>

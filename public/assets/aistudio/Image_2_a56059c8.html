@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#ffb95f","inverse-on-surface":"#f8edff","inverse-surface":"#362c42","on-surface":"#20172c","surface-container-highest":"#ecddfa","on-secondary-fixed-variant":"#653e00","surface-container-low":"#faf0ff","inverse-primary":"#d0c0e8","on-tertiary":"#ffffff","tertiary-fixed":"#e1e0ff","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#2f2ebe","on-background":"#20172c","on-primary-container":"#8b7da3","tertiary-container":"#07006c","surface-variant":"#ecddfa","outline":"#7a757e","on-primary-fixed":"#211635","on-error":"#ffffff","primary-fixed-dim":"#d0c0e8","on-error-container":"#93000a","on-tertiary-fixed":"#07006c","outline-variant":"#cbc4ce","on-secondary-container":"#684000","primary-fixed":"#ebdcff","on-surface-variant":"#49454d","on-secondary-fixed":"#2a1700","primary-container":"#211635","surface-container-high":"#f2e2ff","secondary-fixed":"#ffddb8","surface-dim":"#e4d4f2","tertiary-fixed-dim":"#c0c1ff","tertiary":"#000000","error":"#ba1a1a","error-container":"#ffdad6","on-primary-fixed-variant":"#4d4163","on-secondary":"#ffffff","surface-container":"#f6e9ff","background":"#fff7ff","surface-bright":"#fff7ff","secondary-container":"#fea619","surface":"#fff7ff","primary":"#000000","on-tertiary-container":"#7073ff","secondary":"#855300","surface-tint":"#65587c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.25rem","gutter":"1rem","margin-desktop":"2rem","space-md":"0.75rem","space-xl":"2rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","margin-tablet":"1.5rem"},"fontFamily":{"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"mono-data":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"mono-data":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><main class="w-full min-h-screen flex items-center justify-center p-space-md bg-surface"><div class="flex flex-col w-full">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-gutter-desktop py-space-sm flex items-center justify-between">
+<!-- Brand Logo & Title -->
+<a class="flex items-center gap-space-sm group" href="#hero">
+<img alt="JobHunt Autopilot AI Logo" class="w-10 h-10 rounded-lg shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1XZJW1iuCjZPIDLFO7wUdNgWbSFPoKB4v7IHDScBHEJwGXmnSVQdswS4auKwpY4hWT4FnApIV5vE8wTuYNl8X21H3OqBg0NM1xDIQvOZ86iLZS-FtBPIlpgEA5VZZ64k8RdNYRUwberEJgoS-xdDYmqSh1cN-Udk-SxdabRj5Z6ROF6Q0XH8G3JmvuOuj54UuksZPU0veR_Iy1JQAr7B5f9XvaAfKPsZk669ijX5y_gpxLurjPZGWD8RqY"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-secondary transition-colors">JobHunt Autopilot</span>
+<span class="font-label-sm text-label-sm text-outline">Automation Suite</span>
+</div>
+</a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#features">Features</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#how-it-works">How It Works</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#security">Security &amp; Synthetic Data</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" href="#demo">Live Pipeline</a>
+</nav>
+<!-- Right CTAs -->
+<div class="flex items-center gap-space-sm">
+<button class="hidden sm:inline-flex px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+          Sign In
+        </button>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md shadow-sm hover:brightness-105 active:scale-95 transition-all" href="#demo">
+<span class="material-symbols-outlined text-base">rocket_launch</span>
+<span>Launch Web App</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Hero Section with Garba Radiance Motif -->
+<section class="relative overflow-hidden bg-primary-container text-on-primary pt-space-xl pb-24" id="hero">
+<!-- Ambient Backdrop Lighting & Mandala Motif SVG -->
+<div class="absolute inset-0 pointer-events-none overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[550px] bg-secondary-container/15 blur-[120px] rounded-full"></div>
+<!-- Subtle Elegant Garba Circular Vector Motif -->
+<svg class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[780px] h-[780px] opacity-[0.07] text-secondary-fixed animate-[spin_160s_linear_infinite]" fill="none" stroke="currentColor" viewbox="0 0 400 400">
+<circle cx="200" cy="200" r="190" stroke-dasharray="4 6" stroke-width="0.75"></circle>
+<circle cx="200" cy="200" r="150" stroke-width="0.5"></circle>
+<circle cx="200" cy="200" r="110" stroke-dasharray="3 3" stroke-width="0.75"></circle>
+<circle cx="200" cy="200" r="70" stroke-width="0.5"></circle>
+<!-- Intricate radial spokes echoing Gujarat Garba choreographic circles -->
+<g stroke-width="0.5">
+<line x1="200" x2="200" y1="10" y2="390"></line>
+<line x1="10" x2="390" y1="200" y2="200"></line>
+<line x1="66" x2="334" y1="66" y2="334"></line>
+<line x1="66" x2="334" y1="334" y2="66"></line>
+<polygon points="200,50 250,150 350,200 250,250 200,350 150,250 50,200 150,150"></polygon>
+<polygon points="200,90 235,165 310,200 235,235 200,310 165,235 90,200 165,165"></polygon>
+</g>
+</svg>
+</div>
+<div class="relative max-w-7xl mx-auto px-gutter-desktop flex flex-col items-center text-center">
+<!-- Hackathon Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container-lowest/10 backdrop-blur-md shadow-sm mb-space-lg">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary-fixed tracking-wide uppercase">
+          Automation Track • Garbathon 2026 by GDG Ahmedabad
+        </span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display-lg text-display-lg max-w-4xl tracking-tight leading-tight">
+        Your job search, <span class="bg-gradient-to-r from-secondary-fixed via-secondary-fixed-dim to-secondary-container bg-clip-text text-transparent">on autopilot.</span>
+</h1>
+<!-- Subhead -->
+<p class="font-body-lg text-body-lg text-inverse-primary/80 max-w-3xl mt-space-md mb-space-xl font-normal">
+        Transform a chaotic inbox of 20+ job emails into a prioritized pipeline. Automatically extracts applications, flags predatory recruitment scams with verifiable evidence, schedules 7-day follow-ups, and generates tailored interview briefings.
+      </p>
+<!-- Hero Actions -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mb-space-xl">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm shadow-lg hover:shadow-secondary-container/20 hover:brightness-105 active:scale-95 transition-all" href="#demo">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span>Analyze My Inbox (Try Demo)</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-surface-container-lowest/10 text-on-primary font-headline-sm text-headline-sm backdrop-blur-sm hover:bg-surface-container-lowest/20 transition-all" href="#how-it-works">
+<span class="material-symbols-outlined text-lg">play_circle</span>
+<span>Explore Pipeline</span>
+</a>
+</div>
+<!-- Hero Perspective UI Mockup Showcase -->
+<div class="w-full max-w-5xl rounded-xl bg-surface-container-lowest text-on-surface shadow-2xl p-space-md text-left transition-all">
+<!-- Dashboard Top Control bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="ml-space-sm font-label-sm text-label-sm text-outline font-mono-data">PIPELINE ENGINE: ACTIVE • SYNTHETIC_CORPUS_v2.6</span>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm bg-surface-container-lowest px-space-sm py-1 rounded shadow-sm">
+<span class="material-symbols-outlined text-sm">format_image_left</span>
+<span>Zero Data Leakage • 100% Client-Side</span>
+</div>
+</div>
+<!-- 3-Column Preview Layout (Kanban Micro View) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Col 1: High-Confidence Interviews -->
+<div class="bg-surface rounded-lg p-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary-container uppercase tracking-wider font-semibold">Interviews (4 Scheduled)</span>
+<span class="px-space-xs py-0.5 rounded text-xs bg-tertiary-fixed text-on-tertiary-fixed font-bold">Priority</span>
+</div>
+<!-- Card: Google -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Google</span>
+<span class="px-2 py-0.5 rounded text-xs bg-surface-container text-on-surface-variant font-medium">₹42 LPA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Staff Frontend Architect • L6</p>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary-container">
+<span class="material-symbols-outlined text-sm">calendar_today</span>
+<span>Round 2 System Design: Tomorrow, 3:30 PM IST</span>
+</div>
+</div>
+<!-- Card: Zepto -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Zepto</span>
+<span class="px-2 py-0.5 rounded text-xs bg-surface-container text-on-surface-variant font-medium">₹36 LPA</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Senior Automation Engineer</p>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-sm">psychology</span>
+<span>AI Briefing Ready: 6 System Prep Prompts</span>
+</div>
+</div>
+</div>
+<!-- Col 2: Action Required / Stagnant (Follow-ups) -->
+<div class="bg-surface rounded-lg p-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Awaiting Signal (8)</span>
+<span class="px-space-xs py-0.5 rounded text-xs bg-secondary-fixed text-on-secondary-fixed font-bold">&gt;7 Days</span>
+</div>
+<!-- Card: Razorpay -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Razorpay</span>
+<span class="px-2 py-0.5 rounded text-xs bg-surface-container text-on-surface-variant font-medium">Applied 8d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Staff Automation Lead</p>
+<div class="bg-secondary-fixed/20 p-space-xs rounded flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary">Polite nudge drafted</span>
+<span class="material-symbols-outlined text-secondary text-sm">send</span>
+</div>
+</div>
+<!-- Card: Atlassian -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Atlassian</span>
+<span class="px-2 py-0.5 rounded text-xs bg-surface-container text-on-surface-variant font-medium">Applied 10d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Engineering Lead - Pipeline Platform</p>
+<span class="font-label-sm text-label-sm text-outline">Recruiter: Last active 2d ago</span>
+</div>
+</div>
+<!-- Col 3: Scam Interceptor Alerts -->
+<div class="bg-surface rounded-lg p-space-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-error font-semibold uppercase tracking-wider">Fraud Guard Intercepts (3)</span>
+<span class="px-space-xs py-0.5 rounded text-xs bg-error-container text-on-error-container font-bold">Threat Neutralized</span>
+</div>
+<!-- Card: Scam Warning -->
+<div class="bg-error-container/30 p-space-sm rounded shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">"GlobalTech Cloud Ltd"</span>
+<span class="px-2 py-0.5 rounded text-xs bg-error text-on-error font-bold">99% SCAM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Senior Cloud Specialist ($95/hr)</p>
+<div class="flex items-start gap-space-xs font-label-sm text-label-sm text-error">
+<span class="material-symbols-outlined text-base">gpp_bad</span>
+<span>Flagged: Sender requested ₹4,500 "Mandatory Onboarding Laptop Fee" via Telegram</span>
+</div>
+</div>
+<!-- Card: Domain Spoof -->
+<div class="bg-surface-container-lowest p-space-sm rounded shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">"Acme Careers Intl"</span>
+<span class="px-2 py-0.5 rounded text-xs bg-secondary-fixed-dim text-on-surface font-bold">SUSPICIOUS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-xs">Domain created 4 days ago on disposable registrar.</p>
+<span class="font-label-sm text-label-sm text-outline">Action: Auto-quarantined to Trash</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Social Proof / Trust Metrics Strip -->
+<section class="w-full bg-surface-container-low py-space-lg shadow-sm">
+<div class="max-w-7xl mx-auto px-gutter-desktop grid grid-cols-2 md:grid-cols-4 gap-space-md text-center">
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">20/20</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Synthetic Job Emails Processed in 4.2s</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-secondary font-bold">100%</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Client-Side Privacy (No External Scrapes)</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-error font-bold">3 Intercepted</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Predatory Fee &amp; Domain Scams Neutralized</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-display-lg text-display-lg text-tertiary-container font-bold">4 Confirmed</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Live Interviews Scheduled &amp; Synced</span>
+</div>
+</div>
+</section>
+<!-- Three-Step "How It Works" Section -->
+<section class="py-24 bg-surface" id="how-it-works">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container font-label-sm text-label-sm text-secondary uppercase font-semibold mb-space-xs">
+          Engine Workflow
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">From Chaos to Clarity in 3 Algorithmic Steps</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+          Built specifically for high-frequency job applications where unread recruiter updates and deceptive phishing hide in plain sight.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-display-lg text-headline-lg text-on-surface mb-space-md">
+            01
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Analyze Emails</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Feed raw inbox threads or upload .EML corpus. The natural language engine categorizes messages into Applications, Interview Invites, Stagnant Leads, and Deceptive Spam.
+          </p>
+<div class="bg-surface-container-low p-space-sm rounded font-mono-data text-mono-data text-outline">
+            Regex heuristics + NLP semantic context parser
+          </div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-display-lg text-headline-lg text-secondary mb-space-md">
+            02
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Organize &amp; Protect</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Applications automatically populate an interactive Kanban workbench. The Scam Engine assesses domain age, security certificates, and upfront payment patterns in real time.
+          </p>
+<div class="bg-surface-container-low p-space-sm rounded font-mono-data text-mono-data text-secondary">
+            Multi-signal scam score with verifiable audit trails
+          </div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow relative">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center font-display-lg text-headline-lg text-tertiary-container mb-space-md">
+            03
+          </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Take the Next Step</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Trigger single-click follow-up sequences for leads that haven't responded within 7 business days. Access auto-generated technical interview crib sheets tailored to the exact role.
+          </p>
+<div class="bg-surface-container-low p-space-sm rounded font-mono-data text-mono-data text-tertiary-container">
+            1-click Gmail sync + automated briefing sheets
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Deep-Dive Grid -->
+<section class="py-24 bg-surface-container-low" id="features">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Tactical Intelligence</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Engineered to Win the Recruitment Gauntlet</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Every component is designed to reduce cognitive load while protecting candidates from sophisticated hiring fraud.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-on-surface mb-space-md">
+<span class="material-symbols-outlined text-2xl">view_kanban</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Automated Pipeline</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Auto-extracts company names, compensation rates, recruiter titles, and interview rounds into unified stages without manual data entry.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low px-space-xs py-1 rounded font-label-sm text-label-sm text-outline">
+            Parsed: 20 applications in 4.2s
+          </div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-on-error-container mb-space-md">
+<span class="material-symbols-outlined text-2xl">security</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Multi-Signal Scam Detection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Identifies predatory indicators: upfront security deposits, spoofed sender domains, unverified Telegram interviews, and premature Aadhaar/PAN collection.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-error-container/40 px-space-xs py-1 rounded font-label-sm text-label-sm text-error font-medium">
+            Heuristic confidence score included
+          </div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed mb-space-md">
+<span class="material-symbols-outlined text-2xl">schedule_send</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">7-Day Stagnancy Follow-ups</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Prevents dropped leads. Automatically composes courteous, customized follow-up emails highlighting recent portfolio milestones after 7 days of silence.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-secondary-fixed/30 px-space-xs py-1 rounded font-label-sm text-label-sm text-secondary font-medium">
+            One-tap mail client launch
+          </div>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed mb-space-md">
+<span class="material-symbols-outlined text-2xl">psychology_alt</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Role-Specific Interview Prep</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Pre-interview intelligence synthesizing the job description with recruiter communications to generate 10 high-probability questions and system architectural briefs.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm bg-tertiary-fixed/30 px-space-xs py-1 rounded font-label-sm text-label-sm text-tertiary-container font-medium">
+            Google, Zepto, Razorpay presets
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Live Demo & Corpus Playground Section -->
+<section class="py-24 bg-surface" id="demo">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-space-lg gap-space-md">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-xs py-1 rounded bg-secondary-fixed font-label-sm text-label-sm text-on-secondary-fixed mb-space-xs font-semibold">
+            Live Interactive Simulator
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Explore the Synthetic Pipeline</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select an email payload below to inspect the AI's instant classification, risk audit, and response draft.</p>
+</div>
+<!-- Action / Filter Toggle -->
+<div class="flex items-center gap-space-xs bg-surface-container p-1 rounded-lg">
+<button class="px-space-md py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface shadow-sm" id="filter-all">All (20)</button>
+<button class="px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" id="filter-interview">Interviews (4)</button>
+<button class="px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" id="filter-scam">Scams (3)</button>
+<button class="px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" id="filter-followup">Follow-ups (8)</button>
+</div>
+</div>
+<!-- Playground Dynamic Inspector Workbench -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: Email Feed / Pipeline Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-sm">
+<!-- Item 1: High Priority Interview -->
+<div class="demo-card cursor-pointer p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:scale-[0.99] ring-2 ring-primary-container" data-category="interview" onclick="selectEmail(0)">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Google India Recruitment</span>
+</div>
+<span class="px-2 py-0.5 rounded text-xs bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">Interview Scheduled</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium truncate">Invitation: System Design Round - Staff Frontend Architect (L6)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              "Hi candidate, thank you for completing the technical screen. The team was impressed by your distributed state sync answers. We'd like to schedule your 60-minute virtual onsite..."
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Recruiter: priya.s@google.com</span>
+<span class="text-tertiary-container font-semibold">Scheduled for Tomorrow</span>
+</div>
+</div>
+<!-- Item 2: Scam Alert -->
+<div class="demo-card cursor-pointer p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:scale-[0.99]" data-category="scam" onclick="selectEmail(1)">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">GlobalTech HR Operations</span>
+</div>
+<span class="px-2 py-0.5 rounded text-xs bg-error-container text-on-error-container font-bold uppercase tracking-wider">99% Scam Score</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium truncate">Urgent: Offer Letter Released - Laptop Security Deposit Required</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              "Congratulations! You have been selected without technical interviews for the Cloud Specialist position. Please deposit ₹4,500 for courier insurance of your MacBook..."
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span class="text-error font-medium">Domain: hr-globaltech-careers.online</span>
+<span class="text-error font-bold">Threat: Advance Fee Fraud</span>
+</div>
+</div>
+<!-- Item 3: Stagnant Follow-up -->
+<div class="demo-card cursor-pointer p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-all active:scale-[0.99]" data-category="followup" onclick="selectEmail(2)">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Razorpay Engineering Talent</span>
+</div>
+<span class="px-2 py-0.5 rounded text-xs bg-secondary-fixed text-on-secondary-fixed font-bold uppercase tracking-wider">Follow-up Due</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface font-medium truncate">Application Received: Staff Automation Architect</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              "We have received your application for Staff Automation Architect. Our hiring panel reviews portfolios on Mondays. We will get back shortly..."
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Applied: 8 days ago • No follow-up response</span>
+<span class="text-secondary font-semibold">1-Click Nudge Ready</span>
+</div>
+</div>
+</div>
+<!-- Right: Inspector Deep Dive Rail (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md h-full flex flex-col justify-between" id="inspector-panel">
+<div>
+<div class="flex items-center justify-between pb-space-sm mb-space-md bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-outline uppercase font-mono-data">AI INSPECTION DOCK</span>
+<span class="px-2 py-0.5 rounded text-xs bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase" id="inspect-tag">Interview Confirmed</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1" id="inspect-title">Google India • Staff Frontend Architect</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md" id="inspect-sub">Round 2 System Design with Senior Director of Engineering.</p>
+<!-- Scam/Security Breakdown Gauge -->
+<div class="bg-surface-container-low p-space-md rounded-lg mb-space-md">
+<div class="flex justify-between items-center mb-space-xs font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">Authenticity &amp; Safety Audit</span>
+<span class="text-tertiary-container font-bold" id="inspect-score">100% Verified Legit</span>
+</div>
+<!-- Visual Risk Meter -->
+<div class="w-full bg-surface-container rounded-full h-2 mb-space-xs overflow-hidden">
+<div class="bg-tertiary-container h-2 rounded-full w-full transition-all" id="inspect-meter"></div>
+</div>
+<p class="font-mono-data text-mono-data text-outline leading-tight" id="inspect-evidence">
+                  Domain: google.com (SPF/DKIM/DMARC pass) • Corporate GSuite headers valid • No premature payment or sensitive PII demanded.
+                </p>
+</div>
+<!-- Automated Action Draft / Briefing -->
+<div>
+<h4 class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mb-space-xs" id="inspect-action-label">Role-Specific Technical Briefing</h4>
+<div class="bg-surface-container-low p-space-md rounded-lg font-body-sm text-body-sm text-on-surface leading-relaxed" id="inspect-content">
+<ul class="list-disc list-inside space-y-1 text-on-surface-variant font-mono-data">
+<li>Key Focus: Cross-tab IndexedDB replication under 100ms latency.</li>
+<li>Anticipated question: State machine orchestration for concurrent multi-client transactions.</li>
+<li>Recruiter note: Interviewer is author of open-source Web Worker threading specs.</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Context Action Button -->
+<div class="pt-space-md mt-space-md">
+<button class="w-full py-space-sm px-space-md rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-space-xs" id="inspect-cta">
+<span class="material-symbols-outlined text-base">download_done</span>
+<span id="inspect-btn-text">Download Interview Prep Cheat Sheet</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Privacy & Synthetic Data Architecture Section -->
+<section class="py-24 bg-surface-container-lowest text-on-surface" id="security">
+<div class="max-w-7xl mx-auto px-gutter-desktop">
+<div class="bg-primary-container rounded-2xl p-space-xl text-on-primary relative overflow-hidden shadow-xl">
+<!-- Ambient vector graphic -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-lowest/10 font-label-sm text-label-sm text-secondary-fixed mb-space-md font-semibold">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Ethical AI Commitment</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-space-md">
+            Built for Garbathon 2026 with a 100% Synthetic Privacy Guarantee
+          </h2>
+<p class="font-body-md text-body-md text-inverse-primary leading-relaxed mb-space-lg">
+            Job applicants face enough anxiety without worrying about unauthorized inbox scraping. JobHunt Autopilot AI was engineered from the ground up for the Automation Track using high-fidelity synthetic job hunt datasets. It never requires live OAuth inbox access or stores sensitive personal identities on third-party servers.
+          </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-xs">
+<div class="bg-surface-container-lowest/5 p-space-sm rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl mb-1">cloud_off</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">Zero Third-Party Storage</p>
+<p class="font-body-sm text-body-sm text-inverse-primary/70">Processed ephemerally in browser memory.</p>
+</div>
+<div class="bg-surface-container-lowest/5 p-space-sm rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl mb-1">verified_user</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">Synthetic Test Data</p>
+<p class="font-body-sm text-body-sm text-inverse-primary/70">20 realistic multi-industry applicant scenarios.</p>
+</div>
+<div class="bg-surface-container-lowest/5 p-space-sm rounded-lg backdrop-blur-sm">
+<span class="material-symbols-outlined text-secondary-fixed text-2xl mb-1">code</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">Open Source Codebase</p>
+<p class="font-body-sm text-body-sm text-inverse-primary/70">Publicly auditable regex &amp; NLP models.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer with GDG Ahmedabad & Garbathon 2026 Attribution -->
+<footer class="w-full bg-surface-container-lowest py-space-xl shadow-inner">
+<div class="max-w-7xl mx-auto px-gutter-desktop flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<img alt="JobHunt Autopilot AI Logo" class="w-8 h-8 rounded-lg" src="https://lh3.googleusercontent.com/aida/AEtjO1XZJW1iuCjZPIDLFO7wUdNgWbSFPoKB4v7IHDScBHEJwGXmnSVQdswS4auKwpY4hWT4FnApIV5vE8wTuYNl8X21H3OqBg0NM1xDIQvOZ86iLZS-FtBPIlpgEA5VZZ64k8RdNYRUwberEJgoS-xdDYmqSh1cN-Udk-SxdabRj5Z6ROF6Q0XH8G3JmvuOuj54UuksZPU0veR_Iy1JQAr7B5f9XvaAfKPsZk669ijX5y_gpxLurjPZGWD8RqY"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">JobHunt Autopilot AI</span>
+<span class="font-body-sm text-body-sm text-outline">Submission for Garbathon 2026 • GDG Ahmedabad</span>
+</div>
+</div>
+<div class="flex items-center gap-space-lg font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-on-surface transition-colors" href="#hero">Top</a>
+<a class="hover:text-on-surface transition-colors" href="#features">Features</a>
+<a class="hover:text-on-surface transition-colors" href="#how-it-works">How It Works</a>
+<a class="hover:text-on-surface flex items-center gap-1 transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-base">terminal</span>
+<span>GitHub Repo</span>
+</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-gutter-desktop mt-space-lg pt-space-md text-center text-outline font-label-sm text-label-sm">
+      Crafted with precision for Gujarat's premier tech hackathon • Automation Track • © 2026 JobHunt Autopilot
+    </div>
+</footer>
+<!-- Interactive JavaScript for Live Playground Demo -->
+<script>
+    const emailData = [
+      {
+        tag: "Interview Confirmed",
+        tagClass: "bg-tertiary-fixed text-on-tertiary-fixed",
+        title: "Google India • Staff Frontend Architect",
+        sub: "Round 2 System Design with Senior Director of Engineering.",
+        score: "100% Verified Legit",
+        scoreColor: "text-tertiary-container",
+        meterWidth: "w-full",
+        meterBg: "bg-tertiary-container",
+        evidence: "Domain: google.com (SPF/DKIM/DMARC pass) • Corporate GSuite headers valid • No premature payment or sensitive PII demanded.",
+        actionLabel: "Role-Specific Technical Briefing",
+        contentHtml: `<ul class="list-disc list-inside space-y-1 text-on-surface-variant font-mono-data">
+          <li>Key Focus: Cross-tab IndexedDB replication under 100ms latency.</li>
+          <li>Anticipated question: State machine orchestration for concurrent multi-client transactions.</li>
+          <li>Recruiter note: Interviewer is author of open-source Web Worker threading specs.</li>
+        </ul>`,
+        btnText: "Download Interview Prep Cheat Sheet",
+        btnClass: "bg-primary-container text-on-primary"
+      },
+      {
+        tag: "99% High Risk Scam",
+        tagClass: "bg-error text-on-error",
+        title: "GlobalTech HR • Fraudulent Offer Intercepted",
+        sub: "Advance-fee equipment deposit scam targeting applicants.",
+        score: "Critical Threat Flagged",
+        scoreColor: "text-error",
+        meterWidth: "w-11/12",
+        meterBg: "bg-error",
+        evidence: "FLAG 1: Registered domain age: 4 days old (disposable registrar).<br>FLAG 2: Telegram redirect for interview.<br>FLAG 3: Unsolicited job offer requesting ₹4,500 laptop security bond.",
+        actionLabel: "Neutralization Actions",
+        contentHtml: `<div class="p-space-xs bg-error-container/40 rounded text-error font-body-sm font-medium">
+          Automated Quarantine Triggered. The sender has been flagged across community heuristics and blacklisted from your pipeline.
+        </div>`,
+        btnText: "Export Scam Evidence Dossier",
+        btnClass: "bg-error text-on-error"
+      },
+      {
+        tag: "Follow-up Due (8 Days Silent)",
+        tagClass: "bg-secondary-fixed text-on-secondary-fixed",
+        title: "Razorpay • Staff Automation Lead",
+        sub: "Initial resume submission sent 8 days ago with no recruiter triage.",
+        score: "98% Normal Stagnancy",
+        scoreColor: "text-secondary",
+        meterWidth: "w-3/4",
+        meterBg: "bg-secondary-container",
+        evidence: "Standard enterprise hiring slowdown. No rejection bounce detected. Recruiter LinkedIn activity active yesterday.",
+        actionLabel: "Auto-Generated Polite Nudge Draft",
+        contentHtml: `<p class="font-mono-data text-mono-data text-on-surface bg-surface-container p-2 rounded leading-normal">
+          "Hi Razorpay Hiring Team, following up on my application for Staff Automation Architect. I recently published an open-source CI/CD benchmark suite that aligns directly with your engineering blog's scaling goals..."
+        </p>`,
+        btnText: "Copy Follow-up & Launch Gmail",
+        btnClass: "bg-secondary-container text-on-secondary-container"
+      }
+    ];
+
+    function selectEmail(index) {
+      const data = emailData[index];
+      const cards = document.querySelectorAll('.demo-card');
+      cards.forEach((card, i) => {
+        if(i === index) {
+          card.classList.add('ring-2', 'ring-primary-container');
+        } else {
+          card.classList.remove('ring-2', 'ring-primary-container');
+        }
+      });
+
+      const tag = document.getElementById('inspect-tag');
+      tag.className = `px-2 py-0.5 rounded text-xs font-bold uppercase ${data.tagClass}`;
+      tag.innerText = data.tag;
+
+      document.getElementById('inspect-title').innerText = data.title;
+      document.getElementById('inspect-sub').innerText = data.sub;
+
+      const score = document.getElementById('inspect-score');
+      score.className = `font-bold ${data.scoreColor}`;
+      score.innerText = data.score;
+
+      const meter = document.getElementById('inspect-meter');
+      meter.className = `h-2 rounded-full transition-all ${data.meterBg} ${data.meterWidth}`;
+
+      document.getElementById('inspect-evidence').innerHTML = data.evidence;
+      document.getElementById('inspect-action-label').innerText = data.actionLabel;
+      document.getElementById('inspect-content').innerHTML = data.contentHtml;
+
+      const btn = document.getElementById('inspect-cta');
+      btn.className = `w-full py-space-sm px-space-md rounded-lg font-headline-sm text-headline-sm hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-space-xs ${data.btnClass}`;
+      document.getElementById('inspect-btn-text').innerText = data.btnText;
+    }
+
+    // Filter Buttons functionality
+    document.getElementById('filter-all').addEventListener('click', () => filterCategory('all', 'filter-all'));
+    document.getElementById('filter-interview').addEventListener('click', () => filterCategory('interview', 'filter-interview'));
+    document.getElementById('filter-scam').addEventListener('click', () => filterCategory('scam', 'filter-scam'));
+    document.getElementById('filter-followup').addEventListener('click', () => filterCategory('followup', 'filter-followup'));
+
+    function filterCategory(cat, btnId) {
+      const buttons = ['filter-all', 'filter-interview', 'filter-scam', 'filter-followup'];
+      buttons.forEach(id => {
+        const btn = document.getElementById(id);
+        if(id === btnId) {
+          btn.className = "px-space-md py-1 rounded font-label-sm text-label-sm bg-surface-container-lowest text-on-surface shadow-sm";
+        } else {
+          btn.className = "px-space-md py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface";
+        }
+      });
+
+      const cards = document.querySelectorAll('.demo-card');
+      cards.forEach(card => {
+        if(cat === 'all' || card.getAttribute('data-category') === cat) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</div></main></body></html>

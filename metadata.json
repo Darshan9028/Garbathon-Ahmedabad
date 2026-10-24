@@ -1,0 +1,7 @@
+{
+  "name": "JobHunt Autopilot AI",
+  "description": "Autonomous career intelligence suite with inbox analyzer, application tracker, scam detection center, and interview follow-ups.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

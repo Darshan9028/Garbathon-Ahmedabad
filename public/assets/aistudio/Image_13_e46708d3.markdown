@@ -1,0 +1,250 @@
+---
+name: Autonomous Career Intelligence
+colors:
+  surface: '#fff7ff'
+  surface-dim: '#e4d4f2'
+  surface-bright: '#fff7ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#faf0ff'
+  surface-container: '#f6e9ff'
+  surface-container-high: '#f2e2ff'
+  surface-container-highest: '#ecddfa'
+  on-surface: '#20172c'
+  on-surface-variant: '#49454d'
+  inverse-surface: '#362c42'
+  inverse-on-surface: '#f8edff'
+  outline: '#7a757e'
+  outline-variant: '#cbc4ce'
+  surface-tint: '#65587c'
+  primary: '#000000'
+  on-primary: '#ffffff'
+  primary-container: '#211635'
+  on-primary-container: '#8b7da3'
+  inverse-primary: '#d0c0e8'
+  secondary: '#855300'
+  on-secondary: '#ffffff'
+  secondary-container: '#fea619'
+  on-secondary-container: '#684000'
+  tertiary: '#000000'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#07006c'
+  on-tertiary-container: '#7073ff'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#ebdcff'
+  primary-fixed-dim: '#d0c0e8'
+  on-primary-fixed: '#211635'
+  on-primary-fixed-variant: '#4d4163'
+  secondary-fixed: '#ffddb8'
+  secondary-fixed-dim: '#ffb95f'
+  on-secondary-fixed: '#2a1700'
+  on-secondary-fixed-variant: '#653e00'
+  tertiary-fixed: '#e1e0ff'
+  tertiary-fixed-dim: '#c0c1ff'
+  on-tertiary-fixed: '#07006c'
+  on-tertiary-fixed-variant: '#2f2ebe'
+  background: '#fff7ff'
+  on-background: '#20172c'
+  surface-variant: '#ecddfa'
+typography:
+  display-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '700'
+    lineHeight: 44px
+    letterSpacing: -0.025em
+  display-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '600'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 30px
+    letterSpacing: -0.015em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 16px
+    fontWeight: '400'
+    lineHeight: 24px
+    letterSpacing: -0.005em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 14px
+    fontWeight: '400'
+    lineHeight: 20px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0.005em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '600'
+    lineHeight: 14px
+    letterSpacing: 0.03em
+  mono-data:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 12px
+    fontWeight: '500'
+    lineHeight: 16px
+    letterSpacing: 0.02em
+rounded:
+  sm: 0.125rem
+  DEFAULT: 0.25rem
+  md: 0.375rem
+  lg: 0.5rem
+  xl: 0.75rem
+  full: 9999px
+spacing:
+  gutter: 1rem
+  gutter-desktop: 1.5rem
+  margin: 1rem
+  margin-tablet: 1.5rem
+  margin-desktop: 2rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 0.75rem
+  space-lg: 1.25rem
+  space-xl: 2rem
+---
+
+## Brand & Style
+
+This design system is tailored for an enterprise-grade AI automation suite built specifically for job seekers navigating complex modern recruitment pipelines. The emotional core balances authoritative algorithmic precision with reassuring, human-centric security. Users under job search stress demand clarity, absolute data integrity, and swift visual validation—especially when relying on automated follow-ups and scam detection engines.
+
+The aesthetic fuses modern high-density SaaS patterns (evoking Linear and Vercel) with rich editorial depth. High-contrast surfaces pair deep midnight plum accents with warm, luminous alabaster workspaces. Instead of cold, clinical grays or distracting neon gradients, the interface leans on deep obsidian-plum tones, crisp single-pixel structural lines, and warm amber kinetic pulses for AI operations. Every state communicates proactive intelligence, structured calmness, and vigilance against bad-faith actors.
+
+## Colors
+
+The palette establishes an immediate sense of institutional reliability and refined focus:
+
+- **Primary (`#1A0F2E` - Deep Midnight Plum):** Used for structural brand anchors, focused sidebar surfaces, high-priority button fills, and hero indicators. It replaces conventional black with an intelligent, layered midnight cast.
+- **Secondary (`#F59E0B` - Kinetic Amber):** Denotes active AI background jobs, automated pipeline follow-ups, pending triage actions, and high-value system suggestions.
+- **Tertiary (`#6366F1` - Precision Indigo):** Dedicated to interview workflows, schedule syncs, calendar intelligence, and AI preparation modules.
+- **Neutral (`#1E152A` - Obsidian Purple):** Supplies the primary typographic foundation, stepping down through `#3B2D50` (secondary body) and `#6B5D7D` (meta/captions).
+- **Surface Canvas Architecture:** Base backgrounds rely on soft warm-neutral tiers (`#FBF9FD` for app canvas, `#FFFFFF` for data cards/inspectors, `#F5F2F9` for secondary rails/headers, and `#ECE8F2` for hover states).
+- **System Diagnostics:** Dedicated feedback tokens preserve swift scanning:
+  - *Risk / Scam Alert:* Crimson `#E11D48` (paired with `#FFF1F2` backgrounds for suspicious listing tags).
+  - *Offer / Verified Integrity:* Emerald `#10B981` (paired with `#ECFDF5`).
+  - *Pending / Queued:* Warm Amber `#F59E0B`.
+  - *Active Stage / Syncing:* Violet `#6366F1`.
+
+## Typography
+
+Typography relies on **Plus Jakarta Sans** across all roles to achieve technical clarity without cold clinical detachment. The font’s modern grotesque anatomy ensures numerical legibility in dense data tables, interview timelines, and salary comparison panels.
+
+- **Headlines:** Use tightened negative tracking (`-0.025em` down to `-0.01em`) paired with semi-bold (`600`) and bold (`700`) weights to produce punchy, architectural dashboard titles.
+- **Body:** Built on neutral tracking and balanced line heights (1.4–1.5x) for continuous reading across AI-generated cover letters, scam assessment reports, and interview debrief notes.
+- **Labels & Badges:** Micro-labels utilize slight positive tracking (`+0.03em`) and medium/semibold weights to ensure instant visual parsing across dense Kanban boards, pipeline chips, and status badges.
+
+## Layout & Spacing
+
+This design system uses a strict fluid workbench model optimized for large screens, structured around multi-pane density:
+
+- **Desktop Structure:** 
+  - Fixed left sidebar navigation (240px default, collapsible to 64px icon rail).
+  - Flexible fluid working canvas (split 12-column dynamic layout).
+  - Contextual slide-over/docked inspector rail (380px fixed width) for deep dive scrutiny (e.g., job scam signals, interview cheat-sheets, salary breakdown).
+- **Responsive Adaptations:**
+  - *Desktop (≥1280px):* Full 3-pane orchestration with `gutter-desktop` (1.5rem) and standard section padding (`margin-desktop` of 2rem).
+  - *Tablet (768px – 1279px):* Collapses left navigation to persistent icon rail (64px); inspector sheet transforms into a modal bottom-sheet or full overlay drawer; grid transitions to 8 fluid columns.
+  - *Mobile (<768px):* Single column stack; persistent bottom utility action bar replaces left rail; Kanban boards switch to tabbed swipeable views; data tables collapse into structured list-cards.
+- **Rhythm Rules:** All layout space complies strictly with the base 4px/8px modular scale. Spacing within atomic components (button interiors, chip borders) uses `space-xs` and `space-sm`, while inter-card spacing relies on `space-md` and `space-lg`.
+
+## Elevation & Depth
+
+Visual hierarchy prioritizes crisp tactile precision over deep cinematic drop shadows. Depth is established through subtle surface shifts and fine borders:
+
+1. **Subtle Outlines (The Structural Baseline):** Surfaces are partitioned using crisp 1px borders colored `#E5E0EC`. This ensures complete structural stability across high-density data tables and boards without needing heavy shadows.
+2. **Surface Stacking:** 
+   - Base canvas: `#FBF9FD`
+   - Default cards & toolbars: `#FFFFFF`
+   - Active hover states & secondary cards: `#F5F2F9`
+   - Inset wells & data inputs: `#ECE8F2`
+3. **Restrained Ambient Shadows:**
+   - *Elevation Low (Cards, Filter Bars):* `0 1px 2px 0 rgba(30, 21, 42, 0.04), 0 1px 3px 0 rgba(30, 21, 42, 0.02)`
+   - *Elevation Medium (Flyout Menus, Floating Inspector Panel, Tooltips):* `0 4px 6px -1px rgba(30, 21, 42, 0.06), 0 2px 4px -2px rgba(30, 21, 42, 0.04)`
+   - *Elevation High (Command Palette, Critical Scam Warning Dialogs):* `0 20px 25px -5px rgba(26, 15, 46, 0.1), 0 8px 10px -6px rgba(26, 15, 46, 0.06)`
+4. **Active Edge Highlighting:** Focused or active interactive elements (e.g., an active application card during drag-and-drop or active inspector selection) receive an inner hairline glow: `inset 0 0 0 1px #1A0F2E`.
+
+## Shapes
+
+The design system adopts a **Soft (Level 1)** geometric standard. This geometry produces a disciplined, high-density professional desktop experience:
+
+- **Base Radius (0.25rem / 4px):** Applied to form fields, nested data table items, pipeline tags, and compact buttons.
+- **Medium Radius (0.375rem / 6px):** Applied to standard interactive cards, dropdown panels, segmented controls, and dialog action bars.
+- **Large Radius (0.5rem / 8px):** Reserved for primary content modules, floating modals, master Kanban columns, and the AI summary banner.
+- **Pill Exception:** Pure rounded pills (`rounded-full`) are strictly reserved for status indicators (e.g., "Scam Alert", "Interview Scheduled", "Offer Extended") to distinguish semantic badges from functional interactive buttons.
+
+## Components
+
+### Buttons
+- **Primary:** Background `#1A0F2E`, label `#FFFFFF`, border none. Hover: `#261642` with subtle elevation. Active: scale 0.99.
+- **Secondary / Ghost:** Background `#FFFFFF`, border `1px solid #E5E0EC`, label `#1E152A`. Hover: `#F5F2F9` with border `#D8D1E2`.
+- **AI Kinetic (Actionable):** Amber tint styling. Background `#FFFBEB`, border `1px solid #FDE68A`, label `#B45309`. Hover: `#FEF3C7` with amber highlight indicator.
+- **Destructive:** Background `#FFF1F2`, border `1px solid #FECDD3`, label `#E11D48`. Hover: `#FFE4E6`.
+
+### Chips & Semantic Status Badges
+- High-contrast, micro-padded (`2px 8px`), uppercase or title-case with font size `label-sm`.
+- **Offer / Positive:** `#ECFDF5` background, `#059669` text, `1px solid #A7F3D0`.
+- **Scam / High Risk:** `#FFF1F2` background, `#E11D48` text, `1px solid #FECDD3`. Includes a leading solid warning diamond icon.
+- **Follow-up / Action Required:** `#FFFBEB` background, `#D97706` text, `1px solid #FDE68A`.
+- **Interview:** `#EEF2FF` background, `#4F46E5` text, `1px solid #C7D2FE`.
+
+### Input Fields & Search Bars
+- Background `#FFFFFF`, 1px solid border `#E5E0EC`, inner padding `8px 12px`, border-radius 4px.
+- Focus: Border color `#1A0F2E`, subtle outline shadow `0 0 0 3px rgba(26, 15, 46, 0.08)`.
+- Global AI Query Input (Omnibar): Integrated icon prefix with `#F59E0B` sparkle icon, `#F5F2F9` background, `#1E152A` input text.
+
+### Cards & Kanban Tiles
+- Pure `#FFFFFF` background, `1px solid #E5E0EC` border, 6px radius.
+- Hover: 1px border shift to `#D8D1E2` accompanied by Elevation Low shadow.
+- Header contains concise metadata: Company logo badge (24x24px rounded 4px), title in `headline-sm`, trailing salary chip.
+- Footer houses auto-pilot tags: "Follow-up due tomorrow", "Scam risk: 0%", or "AI tailored cover letter ready".
+
+### Data Tables (Application Master Tracker)
+- Striped or single-surface rows separated by `1px solid #ECE8F2`.
+- Column headers: Uppercase `label-sm` font, text color `#6B5D7D`, background `#FBF9FD`, 32px height.
+- Row heights: Compact 44px with inline action triggers exposed on hover.
+
+### Checkboxes & Radios
+- Size: 16x16px with 3px corner radius (checkboxes) and full circle (radios).
+- Border: `1.5px solid #6B5D7D`. Checked state: `#1A0F2E` background with crisp white icon checkmark.
+
+### Domain-Specific Components
+- **Scam Risk Meter:** A segmented three-tier bar (Low, Moderate, Critical) with inline rationale bullets detailing discrepancies (e.g., disposable domain, payment check request).
+- **AI Follow-up Composer Drawer:** Split card preview with auto-generated prompt adjustments, timeline countdown badge, and one-click mail engine sync.
+- **Interview Readiness Scorecard:** Indigo-accented dial alongside rapid bullet flashcards with audio transcription markers.

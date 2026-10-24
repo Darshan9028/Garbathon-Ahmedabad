@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#ffb95f","inverse-on-surface":"#f8edff","inverse-surface":"#362c42","on-surface":"#20172c","surface-container-highest":"#ecddfa","on-secondary-fixed-variant":"#653e00","surface-container-low":"#faf0ff","inverse-primary":"#d0c0e8","on-tertiary":"#ffffff","tertiary-fixed":"#e1e0ff","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#2f2ebe","on-background":"#20172c","on-primary-container":"#8b7da3","tertiary-container":"#07006c","surface-variant":"#ecddfa","outline":"#7a757e","on-primary-fixed":"#211635","on-error":"#ffffff","primary-fixed-dim":"#d0c0e8","on-error-container":"#93000a","on-tertiary-fixed":"#07006c","outline-variant":"#cbc4ce","on-secondary-container":"#684000","primary-fixed":"#ebdcff","on-surface-variant":"#49454d","on-secondary-fixed":"#2a1700","primary-container":"#211635","surface-container-high":"#f2e2ff","secondary-fixed":"#ffddb8","surface-dim":"#e4d4f2","tertiary-fixed-dim":"#c0c1ff","tertiary":"#000000","error":"#ba1a1a","error-container":"#ffdad6","on-primary-fixed-variant":"#4d4163","on-secondary":"#ffffff","surface-container":"#f6e9ff","background":"#fff7ff","surface-bright":"#fff7ff","secondary-container":"#fea619","surface":"#fff7ff","primary":"#000000","on-tertiary-container":"#7073ff","secondary":"#855300","surface-tint":"#65587c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.25rem","gutter":"1rem","margin-desktop":"2rem","space-md":"0.75rem","space-xl":"2rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","margin-tablet":"1.5rem"},"fontFamily":{"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"mono-data":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"mono-data":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><img alt="JobHunt Autopilot AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZJW1iuCjZPIDLFO7wUdNgWbSFPoKB4v7IHDScBHEJwGXmnSVQdswS4auKwpY4hWT4FnApIV5vE8wTuYNl8X21H3OqBg0NM1xDIQvOZ86iLZS-FtBPIlpgEA5VZZ64k8RdNYRUwberEJgoS-xdDYmqSh1cN-Udk-SxdabRj5Z6ROF6Q0XH8G3JmvuOuj54UuksZPU0veR_Iy1JQAr7B5f9XvaAfKPsZk669ijX5y_gpxLurjPZGWD8RqY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">JobHunt AI</span><div class="flex items-center gap-1 mt-0.5"><span class="font-mono-data text-[10px] text-on-surface-variant font-medium">v1.4</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-[10px] text-secondary font-semibold">GDG Ahmedabad</span></div></div></div></div><nav class="flex flex-col gap-1 px-space-sm mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="dashboard" href="#dashboard"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="inbox-analyzer" href="#inbox-analyzer"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">mark_email_read</span><span class="font-body-md text-body-md">Inbox Analyzer</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">20 Loaded</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="application-tracker" href="#tracker"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-body-md text-body-md">Tracker</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">18</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 rounded-lg transition-colors group bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="scam-detection" href="#scam-detection"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">gshield</span><span class="font-body-md text-body-md">Scam Detection</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-medium">3 Alerts</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="follow-ups" href="#follow-ups"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-body-md text-body-md">Follow-ups</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-medium">4 Due</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="interview-prep" href="#interview-prep"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-body-md text-body-md">Interview Prep</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="settings" href="#settings"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm flex flex-col gap-space-sm bg-surface-container-lowest"><div class="px-space-sm py-2 rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm text-on-surface">Gemini Flash 2.5</span></div><span class="font-mono-data text-[10px] text-secondary font-semibold uppercase tracking-wider">Active</span></div><div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tWTLj4FhhS9sDygLzQgzWq3Sd9HGVR-VdhFsWBiPgIYxFpWN7zFdo4ptOsMo18GovNZbnnOvW66vO7At5aXi_Y6vpJSN52sM40tpb9uLQKfjcXKa4VTnGwxVYuri5S1pwLMcgQXEjp_aVOnD_qKSD32OgPmCQN1nDfdt-U1AsFD_b1iQL7kpexvskiupNraDOCRz5UswivvYv74aWt4ek5EJzvGSbyCHEa3eLsz5Ycmm7xmftUN4"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between"><span class="font-headline-sm text-[13px] text-on-surface truncate">Arjun Sharma</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><span class="font-body-sm text-[11px] text-on-surface-variant truncate">Senior Full-Stack</span><span class="font-label-sm text-[10px] text-secondary-container font-semibold mt-0.5">Active Search</span></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center text-on-surface-variant font-body-sm text-body-sm gap-1.5"><span class="text-on-surface-variant/70">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-semibold">Autopilot Console</span></div><div class="h-4 w-px bg-outline-variant/40 mx-1"></div><div class="relative flex items-center w-72"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search 20 applications, companies, emails..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Demo Data: Active (20 Synced)</span></div><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>+ Analyze Inbox</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center"><button class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-outline-variant transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tWTLj4FhhS9sDygLzQgzWq3Sd9HGVR-VdhFsWBiPgIYxFpWN7zFdo4ptOsMo18GovNZbnnOvW66vO7At5aXi_Y6vpJSN52sM40tpb9uLQKfjcXKa4VTnGwxVYuri5S1pwLMcgQXEjp_aVOnD_qKSD32OgPmCQN1nDfdt-U1AsFD_b1iQL7kpexvskiupNraDOCRz5UswivvYv74aWt4ek5EJzvGSbyCHEa3eLsz5Ycmm7xmftUN4"/></button></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Element -->
+<div class="relative w-full overflow-hidden px-space-xl pt-space-lg pb-space-xl">
+<div class="pointer-events-none absolute -top-24 -right-16 w-96 h-96 rounded-full bg-error/5 blur-3xl"></div>
+<div class="pointer-events-none absolute top-40 left-1/3 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-3xl"></div>
+<!-- Header & Breadcrumb Context -->
+<div class="flex flex-col gap-1 mb-space-lg relative z-10">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+          Heuristic Shield Active
+        </span>
+<span class="font-mono-data text-mono-data text-on-surface-variant font-medium">Model: Gemini Flash 2.5 Recruitment Guard</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+        Scam &amp; Phishing Detection Center
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Heuristic AI engine auditing recruiter authenticity, spoofed domains, upfront fee fraud, and premature identity theft across all inbound recruitment channels.
+      </p>
+</div>
+<!-- Top Threat Summary Metric Cards (3 Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl relative z-10">
+<!-- Card 1: High Risk -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-error"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-error font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+              High Risk / Predatory Scams
+            </span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Flagged alerts</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+            Action Advised
+          </span>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Advance Fee &amp; KYC harvesting</span>
+<span class="font-mono-data text-mono-data text-error font-semibold">Critical Threat</span>
+</div>
+</div>
+<!-- Card 2: Needs Review -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-secondary-container"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-secondary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">policy</span>
+              Needs Review / Suspicious
+            </span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Flagged channel</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+            Unverified Entity
+          </span>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Disposable TLD (.site) &amp; Telegram reroute</span>
+<span class="font-mono-data text-mono-data text-secondary font-semibold">Moderate</span>
+</div>
+</div>
+<!-- Card 3: Cleared -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 right-0 h-1 bg-primary-container"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+              Verified Legitimate
+            </span>
+<div class="flex items-baseline gap-2 mt-2">
+<span class="font-display-lg text-display-lg text-on-surface font-bold">17</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cleared pipelines</span>
+</div>
+</div>
+<span class="px-2 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+            100% DKIM/SPF
+          </span>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Direct recruiters from verified ATS</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant font-semibold">Safe</span>
+</div>
+</div>
+</div>
+<!-- Main Split-Screen Threat Analysis Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Flagged Message Queue (approx 40% -> 5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Risk Filter Pills Bar -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1">
+<button class="px-3 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-sm whitespace-nowrap" type="button">
+<span>All Alerts</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface text-[10px]">3</span>
+</button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap transition-colors" type="button">
+            Training/Security Fee (1)
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap transition-colors" type="button">
+            Premature KYC (1)
+          </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap transition-colors" type="button">
+            Telegram (1)
+          </button>
+</div>
+<!-- Threat Queue List -->
+<div class="flex flex-col gap-space-sm" id="threatCardList">
+<!-- Threat Card 1 (Active/Selected) -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-md cursor-pointer transition-all relative overflow-hidden ring-2 ring-primary group" onclick="selectThreat(1)">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between gap-2 pl-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Apex Global Tech</span>
+<span class="material-symbols-outlined text-[16px] text-error">gpp_bad</span>
+</div>
+<span class="font-mono-data text-mono-data text-error font-medium truncate">hr@apextech-careers-gmail.com</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold whitespace-nowrap">
+                SCORE 98
+              </span>
+</div>
+<div class="pl-2 mt-2">
+<p class="font-label-md text-label-md text-on-surface font-semibold">
+                Mandatory Laptop Security Deposit Demand (₹2,500)
+              </p>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-error/10 text-error font-label-sm text-[10px] font-bold">
+                  HIGH RISK: Advance Fee Fraud
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-medium">
+                  Lookalike Domain (6d old)
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2 bg-surface-container-low/50 p-2 rounded">
+                "Candidate must submit ₹2,500 via UPI QR code for high-spec MacBook Pro delivery prior to joining..."
+              </p>
+<div class="flex items-center justify-between mt-3 pt-2 text-on-surface-variant font-mono-data text-[11px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  Received 2h ago
+                </span>
+<span class="text-error font-semibold flex items-center gap-0.5">
+                  Inspect Dossier
+                  <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Threat Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all relative overflow-hidden group" onclick="selectThreat(2)">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error/40 group-hover:bg-error transition-colors"></div>
+<div class="flex items-start justify-between gap-2 pl-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">Global Data Services</span>
+<span class="material-symbols-outlined text-[16px] text-error">badge</span>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface-variant font-medium truncate">recruiter92@rediffmail.com</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-error-container/70 text-on-error-container font-label-sm text-label-sm font-bold whitespace-nowrap">
+                SCORE 92
+              </span>
+</div>
+<div class="pl-2 mt-2">
+<p class="font-label-md text-label-md text-on-surface font-semibold">
+                Premature PAN Card &amp; Cancelled Cheque Request
+              </p>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-error/10 text-error font-label-sm text-[10px] font-bold">
+                  HIGH RISK: Identity Harvester
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-medium">
+                  Free Webmail Provider
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2 bg-surface-container-low/50 p-2 rounded">
+                "Please send color scans of PAN, Aadhaar, and blank signed cheque prior to first telephonic interview..."
+              </p>
+<div class="flex items-center justify-between mt-3 pt-2 text-on-surface-variant font-mono-data text-[11px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  Received 5h ago
+                </span>
+<span class="text-on-surface-variant font-medium">Pending Review</span>
+</div>
+</div>
+</div>
+<!-- Threat Card 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md cursor-pointer transition-all relative overflow-hidden group" onclick="selectThreat(3)">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container group-hover:bg-secondary transition-colors"></div>
+<div class="flex items-start justify-between gap-2 pl-2">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold truncate">InnovateTech Global</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">send_to_mobile</span>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface-variant font-medium truncate">hr@innovatetech-jobs.site</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold whitespace-nowrap">
+                SCORE 74
+              </span>
+</div>
+<div class="pl-2 mt-2">
+<p class="font-label-md text-label-md text-on-surface font-semibold">
+                Unsolicited Offer Redirecting to Private Telegram Admin
+              </p>
+<div class="flex flex-wrap gap-1.5 mt-2">
+<span class="px-2 py-0.5 rounded bg-secondary-fixed/50 text-secondary font-label-sm text-[10px] font-bold">
+                  NEEDS REVIEW: Suspicious Channel
+                </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-[10px] font-medium">
+                  Disposable TLD (.site)
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 line-clamp-2 bg-surface-container-low/50 p-2 rounded">
+                "Selected for Senior Frontend Lead. Add VIP recruitment officer on Telegram (@recruiter_alex_global) for briefing..."
+              </p>
+<div class="flex items-center justify-between mt-3 pt-2 text-on-surface-variant font-mono-data text-[11px]">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                  Received 1d ago
+                </span>
+<span class="text-on-surface-variant font-medium">Unresolved</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Safe Recruiter Summary Box -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between mt-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-lowest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">17 Safe Recruiters Verified</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Google, PhonePe, Uber, Swiggy DKIM passed</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-colors" type="button">
+            View Safe List
+          </button>
+</div>
+</div>
+<!-- RIGHT COLUMN: Forensic Evidence & Deep Inspection Panel (approx 60% -> 7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Inspector Container Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-lg relative overflow-hidden">
+<!-- Threat Severity Header with Gauge Visual -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md pb-space-md border-b-0 bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center gap-3">
+<div class="relative w-14 h-14 flex items-center justify-center">
+<!-- SVG Threat Meter Radial -->
+<svg class="w-14 h-14 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container-high" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-error" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="98, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-mono-data text-[13px] font-bold text-error">98</span>
+</div>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-error text-on-error">
+                    CRITICAL SEVERITY
+                  </span>
+<span class="font-mono-data text-mono-data text-on-surface-variant font-medium">Confidence: 99.4%</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-0.5">
+                  Forensic Threat Dossier
+                </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Entity: Apex Global Tech • Target: Arjun Sharma</p>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-auto">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-sm text-label-sm font-semibold flex items-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+                Export Dossier
+              </button>
+</div>
+</div>
+<!-- Audit Trail & Detected Violations (Interactive Checklist) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">flag</span>
+                Detected Heuristic Violations (3 Flagged)
+              </span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">Heuristic Model v3.2</span>
+</div>
+<!-- Violation 1 -->
+<div class="p-space-md rounded-lg bg-error-container/30 flex flex-col gap-1.5 transition-colors">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">payments</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">
+                    Violation 1: Monetary Demand Prior to Employment
+                  </span>
+</div>
+<span class="font-label-sm text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-error text-on-error">
+                  High Severity
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface pl-7">
+                Legitimate employers in India never charge refundable equipment deposits, aptitude test evaluation charges, or MacBook logistics insurance per ILO Convention No. 181 &amp; Ministry of Labour &amp; Employment guidelines.
+              </p>
+<div class="pl-7 mt-1 flex items-center gap-2">
+<span class="font-mono-data text-[11px] text-error font-semibold bg-surface-container-lowest px-2 py-0.5 rounded">
+                  Trigger: "refundable ₹2,500 security deposit"
+                </span>
+</div>
+</div>
+<!-- Violation 2 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">dns</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">
+                    Violation 2: Domain Impersonation &amp; Zero Corporate MX
+                  </span>
+</div>
+<span class="font-label-sm text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container">
+                  Domain Spoof
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface pl-7">
+                The domain <code class="font-mono-data font-bold text-on-surface bg-surface-container-high px-1 py-0.5 rounded">apextech-careers-gmail.com</code> was registered <strong>6 days ago</strong> via Namecheap Privacy. It lacks corporate MX infrastructure and has no corresponding Ministry of Corporate Affairs (MCA) CIN record.
+              </p>
+<div class="pl-7 mt-1 flex items-center gap-2">
+<span class="font-mono-data text-[11px] text-secondary font-semibold bg-surface-container-lowest px-2 py-0.5 rounded">
+                  Domain Age: 6 Days • WHOIS: Redacted
+                </span>
+</div>
+</div>
+<!-- Violation 3 -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">history_edu</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">
+                    Violation 3: No Prior Application or Interview Trace
+                  </span>
+</div>
+<span class="font-label-sm text-[10px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant">
+                  Unsolicited
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface pl-7">
+                Cross-referenced candidate mailbox and application tracking ledger: user has <strong>zero submitted applications</strong> to "Apex Global Tech". Automated mass blast sent via open relay with mail merge variables.
+              </p>
+</div>
+</div>
+<!-- Verifiable Email Header Inspection Matrix -->
+<div class="flex flex-col gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">security</span>
+              Cryptographic Header Verification
+            </span>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div class="p-2.5 rounded bg-error-container/40 flex flex-col">
+<span class="font-mono-data text-[10px] text-on-surface-variant font-semibold">SPF STATUS</span>
+<span class="font-mono-data text-mono-data font-bold text-error mt-0.5">SOFTFAIL</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">IP not in permitted list</span>
+</div>
+<div class="p-2.5 rounded bg-error-container/40 flex flex-col">
+<span class="font-mono-data text-[10px] text-on-surface-variant font-semibold">DKIM SIGNATURE</span>
+<span class="font-mono-data text-mono-data font-bold text-error mt-0.5">NONE (MISSING)</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Unsigned message body</span>
+</div>
+<div class="p-2.5 rounded bg-error-container/40 flex flex-col">
+<span class="font-mono-data text-[10px] text-on-surface-variant font-semibold">DMARC POLICY</span>
+<span class="font-mono-data text-mono-data font-bold text-error mt-0.5">FAIL</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Alignment failed</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low flex flex-col">
+<span class="font-mono-data text-[10px] text-on-surface-variant font-semibold">RETURN-PATH</span>
+<span class="font-mono-data text-mono-data font-bold text-on-surface mt-0.5 truncate">disposable-relay.net</span>
+<span class="font-body-sm text-[10px] text-on-surface-variant">Known bulletproof host</span>
+</div>
+</div>
+</div>
+<!-- Original Email Segment with Highlighted Malicious Patterns -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">mail</span>
+                Message Body Payload (Annotated)
+              </span>
+<span class="font-label-sm text-[11px] text-error font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                Threat payload isolated
+              </span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-inner font-mono-data text-body-sm leading-relaxed text-on-surface bg-slate-50/50">
+<div class="pb-2 mb-2 text-on-surface-variant text-[11px] flex flex-col gap-0.5">
+<div><strong>From:</strong> Apex Careers HR &lt;hr@apextech-careers-gmail.com&gt;</div>
+<div><strong>Subject:</strong> Immediate Employment Offer - Senior Architect • Kit Dispatch</div>
+</div>
+<p class="text-on-surface-variant mb-2">Dear Arjun Sharma,</p>
+<p class="mb-2">
+                We are thrilled to confirm your immediate selection for Senior Full-Stack Specialist at Apex Global Tech with monthly compensation of ₹1,85,000 INR.
+              </p>
+<p class="mb-2 p-2 rounded bg-error-container/60 text-on-error-container">
+                ⚠️ <mark class="bg-error/20 text-error font-bold px-1 rounded">"Candidate must submit a fully refundable ₹2,500 security deposit via official HR UPI QR Code before 5:00 PM today</mark> to initiate dispatched shipment of pre-configured Apple MacBook Pro M3 and security hardware token."
+              </p>
+<p class="text-on-surface-variant">
+                Payment receipt must be shared over WhatsApp (+91-98210-XXXXX) for immediate courier docket allotment.
+              </p>
+</div>
+</div>
+<!-- User Action Bar -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<button class="px-4 py-2.5 rounded-lg bg-error text-on-error font-label-md text-label-md font-semibold hover:bg-error/90 transition-all shadow-sm flex items-center justify-center gap-1.5" onclick="alert('Sender domain apextech-careers-gmail.com added to global spam filter and reported to safe-browsing feeds.')" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+                Mark Reviewed &amp; Blocklist
+              </button>
+<button class="px-3.5 py-2.5 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors flex items-center justify-center" type="button">
+                Dismiss (False Positive)
+              </button>
+</div>
+<a class="px-3 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors text-center" href="https://cybercrime.gov.in" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">local_police</span>
+              Report to Cyber Crime (1930)
+            </a>
+</div>
+<!-- Disclaimer Banner -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[18px] mt-0.5">info</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">
+<strong>Heuristic Notice:</strong> AI threat scoring provides automated heuristic evidence based on domain reputation, sender spoof signatures, and linguistic extortion patterns. This does not constitute a judicial determination. Always cross-check via MCA Registrar or verified corporate HR desk before financial transfers.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectThreat(index) {
+    const list = document.getElementById('threatCardList');
+    if (!list) return;
+    const cards = list.children;
+    for (let i = 0; i < cards.length; i++) {
+      if (i === index - 1) {
+        cards[i].classList.add('ring-2', 'ring-primary', 'shadow-md');
+        cards[i].classList.remove('shadow-sm');
+      } else {
+        cards[i].classList.remove('ring-2', 'ring-primary', 'shadow-md');
+        cards[i].classList.add('shadow-sm');
+      }
+    }
+  }
+</script></main></div></body></html>

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-fixed-dim":"#ffb95f","inverse-on-surface":"#f8edff","inverse-surface":"#362c42","on-surface":"#20172c","surface-container-highest":"#ecddfa","on-secondary-fixed-variant":"#653e00","surface-container-low":"#faf0ff","inverse-primary":"#d0c0e8","on-tertiary":"#ffffff","tertiary-fixed":"#e1e0ff","on-primary":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary-fixed-variant":"#2f2ebe","on-background":"#20172c","on-primary-container":"#8b7da3","tertiary-container":"#07006c","surface-variant":"#ecddfa","outline":"#7a757e","on-primary-fixed":"#211635","on-error":"#ffffff","primary-fixed-dim":"#d0c0e8","on-error-container":"#93000a","on-tertiary-fixed":"#07006c","outline-variant":"#cbc4ce","on-secondary-container":"#684000","primary-fixed":"#ebdcff","on-surface-variant":"#49454d","on-secondary-fixed":"#2a1700","primary-container":"#211635","surface-container-high":"#f2e2ff","secondary-fixed":"#ffddb8","surface-dim":"#e4d4f2","tertiary-fixed-dim":"#c0c1ff","tertiary":"#000000","error":"#ba1a1a","error-container":"#ffdad6","on-primary-fixed-variant":"#4d4163","on-secondary":"#ffffff","surface-container":"#f6e9ff","background":"#fff7ff","surface-bright":"#fff7ff","secondary-container":"#fea619","surface":"#fff7ff","primary":"#000000","on-tertiary-container":"#7073ff","secondary":"#855300","surface-tint":"#65587c"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xs":"0.25rem","space-lg":"1.25rem","gutter":"1rem","margin-desktop":"2rem","space-md":"0.75rem","space-xl":"2rem","gutter-desktop":"1.5rem","margin":"1rem","space-sm":"0.5rem","margin-tablet":"1.5rem"},"fontFamily":{"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"mono-data":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"mono-data":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="px-space-lg pt-space-lg pb-space-md"><div class="flex items-center gap-space-sm"><img alt="JobHunt Autopilot AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZJW1iuCjZPIDLFO7wUdNgWbSFPoKB4v7IHDScBHEJwGXmnSVQdswS4auKwpY4hWT4FnApIV5vE8wTuYNl8X21H3OqBg0NM1xDIQvOZ86iLZS-FtBPIlpgEA5VZZ64k8RdNYRUwberEJgoS-xdDYmqSh1cN-Udk-SxdabRj5Z6ROF6Q0XH8G3JmvuOuj54UuksZPU0veR_Iy1JQAr7B5f9XvaAfKPsZk669ijX5y_gpxLurjPZGWD8RqY"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">JobHunt AI</span><div class="flex items-center gap-1 mt-0.5"><span class="font-mono-data text-[10px] text-on-surface-variant font-medium">v1.4</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-[10px] text-secondary font-semibold">GDG Ahmedabad</span></div></div></div></div><nav class="flex flex-col gap-1 px-space-sm mt-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="dashboard" href="#dashboard"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Dashboard</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="inbox-analyzer" href="#inbox-analyzer"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">mark_email_read</span><span class="font-body-md text-body-md">Inbox Analyzer</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">20 Loaded</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="application-tracker" href="#tracker"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">view_kanban</span><span class="font-body-md text-body-md">Tracker</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant">18</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="scam-detection" href="#scam-detection"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">gshield</span><span class="font-body-md text-body-md">Scam Detection</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-medium">3 Alerts</span></a><a aria-current="page" class="flex items-center justify-between px-space-sm py-2 rounded-lg transition-colors group bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="follow-ups" href="#follow-ups"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">schedule_send</span><span class="font-body-md text-body-md">Follow-ups</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-medium">4 Due</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="interview-prep" href="#interview-prep"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">psychology</span><span class="font-body-md text-body-md">Interview Prep</span></div></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors group" data-path="settings" href="#settings"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Settings</span></div></a></nav></div><div class="p-space-sm flex flex-col gap-space-sm bg-surface-container-lowest"><div class="px-space-sm py-2 rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm text-on-surface">Gemini Flash 2.5</span></div><span class="font-mono-data text-[10px] text-secondary font-semibold uppercase tracking-wider">Active</span></div><div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tWTLj4FhhS9sDygLzQgzWq3Sd9HGVR-VdhFsWBiPgIYxFpWN7zFdo4ptOsMo18GovNZbnnOvW66vO7At5aXi_Y6vpJSN52sM40tpb9uLQKfjcXKa4VTnGwxVYuri5S1pwLMcgQXEjp_aVOnD_qKSD32OgPmCQN1nDfdt-U1AsFD_b1iQL7kpexvskiupNraDOCRz5UswivvYv74aWt4ek5EJzvGSbyCHEa3eLsz5Ycmm7xmftUN4"/><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center justify-between"><span class="font-headline-sm text-[13px] text-on-surface truncate">Arjun Sharma</span><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span></div><span class="font-body-sm text-[11px] text-on-surface-variant truncate">Senior Full-Stack</span><span class="font-label-sm text-[10px] text-secondary-container font-semibold mt-0.5">Active Search</span></div></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center text-on-surface-variant font-body-sm text-body-sm gap-1.5"><span class="text-on-surface-variant/70">Workspace</span><span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span><span class="text-on-surface font-semibold">Autopilot Console</span></div><div class="h-4 w-px bg-outline-variant/40 mx-1"></div><div class="relative flex items-center w-72"><span class="material-symbols-outlined absolute left-3 text-[18px] text-outline">search</span><input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search 20 applications, companies, emails..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-medium">Demo Data: Active (20 Synced)</span></div><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container hover:text-on-primary-container transition-all" type="button"><span class="material-symbols-outlined text-[18px]">auto_awesome</span><span>+ Analyze Inbox</span></button><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center"><button class="flex items-center p-0.5 rounded-full hover:ring-2 hover:ring-outline-variant transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8tWTLj4FhhS9sDygLzQgzWq3Sd9HGVR-VdhFsWBiPgIYxFpWN7zFdo4ptOsMo18GovNZbnnOvW66vO7At5aXi_Y6vpJSN52sM40tpb9uLQKfjcXKa4VTnGwxVYuri5S1pwLMcgQXEjp_aVOnD_qKSD32OgPmCQN1nDfdt-U1AsFD_b1iQL7kpexvskiupNraDOCRz5UswivvYv74aWt4ek5EJzvGSbyCHEa3eLsz5Ycmm7xmftUN4"/></button></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<div class="px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- Top Context & Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-mono-data text-[11px] text-secondary font-semibold uppercase tracking-wider">Communication Engine</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-mono-data text-[11px] text-on-surface-variant">Gemini Flash 2.5 Active</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Follow-ups &amp; Interview Prep</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-0.5">
+          Turn silence into recruiter momentum and prepare high-impact technical answers from real correspondence.
+        </p>
+</div>
+<!-- Quick Operational Metrics Pill -->
+<div class="flex items-center gap-space-sm p-1.5 rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest">
+<span class="material-symbols-outlined text-[18px] text-secondary">trending_up</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">+34% Reply Rate</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">timer</span>
+<span class="font-mono-data text-mono-data text-on-surface">Avg response: 18h</span>
+</div>
+</div>
+</div>
+<!-- Master Navigation Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm border-b-0 pb-1">
+<div class="flex items-center gap-space-xs p-1 rounded-xl bg-surface-container-low">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all duration-200" id="tab-btn-followups" onclick="switchMainTab('followups')" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">schedule_send</span>
+<span>Follow-ups Due</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">4 Due &gt;7d</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all duration-200" id="tab-btn-interview" onclick="switchMainTab('interview')" type="button">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+<span>Interview Preparation &amp; Briefs</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">3 Active Stages</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated Audit:</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-mono-data text-mono-data font-semibold">Synced 14m ago</span>
+</div>
+</div>
+<!-- TAB 1: FOLLOW-UPS WORKBENCH -->
+<div class="flex flex-col gap-space-lg transition-all duration-200" id="section-followups">
+<!-- Summary / Alert Ribbon -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-start sm:items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center shrink-0 text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">4 applications haven't received recruiter updates in 7+ days</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Polite follow-ups boost response rates by 34% by re-surfacing your candidate profile at the top of ATS inboxes.</span>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors" onclick="batchDraftAll()" type="button">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+<span>Batch Draft All (4)</span>
+</button>
+</div>
+</div>
+<!-- Split Screen Workbench (40% List / 60% Studio) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left List (40% -> 5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-on-surface uppercase tracking-wider font-bold">Stagnant Applications (4)</span>
+<span class="font-mono-data text-mono-data text-on-surface-variant">Sorted by Inactivity</span>
+</div>
+<!-- Stagnant Card 1: SELECTED PhonePe -->
+<div class="cursor-pointer p-space-md rounded-xl bg-surface-container-lowest shadow-sm transition-all duration-150 relative overflow-hidden group" id="app-card-phonepe" onclick="selectApp('phonepe')">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary" id="indicator-phonepe"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface font-bold text-sm tracking-tight">
+                  PP
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">PhonePe</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Backend Engineer</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+                High Priority
+              </span>
+</div>
+<div class="mt-space-md p-2 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between font-mono-data text-mono-data">
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_empty</span>
+                  8 days inactive
+                </span>
+<span class="text-on-surface-variant">Last: Oct 12</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1">
+                Post-recruiter screen with Neha • Distributed transactions focus
+              </span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+                Draft Ready to Review
+              </span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</div>
+</div>
+<!-- Stagnant Card 2: Atlassian -->
+<div class="cursor-pointer p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low/70 shadow-sm transition-all duration-150 relative overflow-hidden group" id="app-card-atlassian" onclick="selectApp('atlassian')">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent" id="indicator-atlassian"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-sm tracking-tight">
+                  AT
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Atlassian</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Senior Full Stack Developer</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+                Medium
+              </span>
+</div>
+<div class="mt-space-md p-2 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between font-mono-data text-mono-data">
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_empty</span>
+                  8 days inactive
+                </span>
+<span class="text-on-surface-variant">Last: Oct 12</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1">
+                Direct Portal Submission • Confluence &amp; Jira Ecosystem team
+              </span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">mark_email_unread</span>
+                No follow-up sent yet
+              </span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</div>
+</div>
+<!-- Stagnant Card 3: CRED -->
+<div class="cursor-pointer p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low/70 shadow-sm transition-all duration-150 relative overflow-hidden group" id="app-card-cred" onclick="selectApp('cred')">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent" id="indicator-cred"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-sm tracking-tight">
+                  CR
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">CRED</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Frontend Architect</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+                High Priority
+              </span>
+</div>
+<div class="mt-space-md p-2 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between font-mono-data text-mono-data">
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_empty</span>
+                  9 days inactive
+                </span>
+<span class="text-on-surface-variant">Last: Oct 11</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1">
+                Take-home design system repo submitted • Awaiting reviewer evaluation
+              </span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                Suggested: Send Today
+              </span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</div>
+</div>
+<!-- Stagnant Card 4: Swiggy -->
+<div class="cursor-pointer p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low/70 shadow-sm transition-all duration-150 relative overflow-hidden group" id="app-card-swiggy" onclick="selectApp('swiggy')">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-transparent" id="indicator-swiggy"></div>
+<div class="flex items-start justify-between gap-2">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface font-bold text-sm tracking-tight">
+                  SW
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Swiggy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Engineering Manager Referral</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                Low Priority
+              </span>
+</div>
+<div class="mt-space-md p-2 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between font-mono-data text-mono-data">
+<span class="text-on-surface font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hourglass_empty</span>
+                  11 days inactive
+                </span>
+<span class="text-on-surface-variant">Last: Oct 09</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant line-clamp-1">
+                Warm referral by Rohan V. • Instamart Cart team
+              </span>
+</div>
+<div class="mt-space-sm flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">history</span>
+                Followed up 10 days ago
+              </span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Right Interactive Editor: AI Follow-Up Draft Studio (60% -> 7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<!-- Studio Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">AI Draft Studio</span>
+<span class="px-2 py-0.5 rounded text-xs font-semibold bg-surface-container-high text-on-surface" id="target-company-badge">PhonePe</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Synthesized from Oct 12 Recruiter Call notes with Neha (Tech Talent Lead)</span>
+</div>
+</div>
+<!-- Regenerate prompt action -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="regenerateDraft()" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">refresh</span>
+<span>Regenerate with Gemini</span>
+</button>
+</div>
+<!-- Tone Selector Tabs -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Select Communication Persona &amp; Tone</span>
+<div class="flex flex-wrap gap-space-xs p-1 rounded-lg bg-surface-container-low">
+<button class="px-3.5 py-1.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-sm flex items-center gap-1.5 transition-all" id="tone-polite" onclick="setTone('polite')" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>Polite &amp; Professional</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all" id="tone-value" onclick="setTone('value')" type="button">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Value-Add / Project Update</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all" id="tone-warm" onclick="setTone('warm')" type="button">
+<span class="material-symbols-outlined text-[16px]">sentiment_satisfied</span>
+<span>Warm Check-in</span>
+</button>
+</div>
+</div>
+<!-- Subject Line Input -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold" for="email-subject">Subject Line</label>
+<span class="font-mono-data text-[11px] text-secondary font-semibold">Predicted Open Rate: 82%</span>
+</div>
+<div class="relative flex items-center">
+<input class="w-full px-3.5 py-2.5 bg-surface-container-low text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-colors" id="email-subject" type="text" value="Re: PhonePe Backend Engineer Application — Following up on our initial conversation (Arjun Sharma)"/>
+<button class="absolute right-2.5 p-1 rounded hover:bg-surface-container text-on-surface-variant" onclick="shuffleSubject()" title="Alternate AI Subject" type="button">
+<span class="material-symbols-outlined text-[18px]">cached</span>
+</button>
+</div>
+</div>
+<!-- Email Body Editor Area -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold" for="email-body">Draft Message Context</label>
+<div class="flex items-center gap-2 font-mono-data text-[11px] text-on-surface-variant">
+<span id="word-count">108 words</span>
+<span>•</span>
+<span>35s read time</span>
+</div>
+</div>
+<div class="relative rounded-lg bg-surface-container-low p-1 focus-within:bg-surface-container-lowest transition-colors">
+<textarea class="w-full p-3 bg-transparent text-on-surface font-body-md text-body-md leading-relaxed resize-none focus:outline-none" id="email-body" rows="9">Dear Neha,
+
+I hope you're having a productive week.
+
+I'm checking in regarding our conversation on October 12th for the Backend Engineer role at PhonePe. I remain deeply enthusiastic about the team's work scaling distributed transaction pipelines on high-throughput microservices.
+
+Please let me know if there are any additional code samples, architectural case studies, or portfolio references I can provide to support the evaluation process.
+
+Looking forward to hearing from you.
+
+Warm regards,
+Arjun Sharma</textarea>
+</div>
+</div>
+<!-- Recruiter Recipient Snapshot & Details -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-xs text-on-secondary-fixed-variant">
+                  NS
+                </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Neha Sengupta</span>
+<span class="font-mono-data text-[11px] text-on-surface-variant">neha.s@phonepe.talent.in</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-mono-data text-[11px]">Email validated</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-2">
+<!-- Copy Draft Button (Amber-gold kinetic) -->
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-secondary-fixed hover:bg-secondary-fixed-dim text-on-secondary-fixed-variant font-label-md text-label-md font-bold shadow-sm transition-all active:scale-95" id="copy-btn" onclick="copyDraft()" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+<span id="copy-text">Copy Draft to Clipboard</span>
+</button>
+<!-- Open in Gmail -->
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold transition-all" onclick="openMailClient()" type="button">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>Open in Gmail</span>
+</button>
+</div>
+<!-- Mark Sent & Snooze -->
+<button class="flex items-center gap-1.5 px-3.5 py-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" onclick="markSent()" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Mark as Sent (+7d Snooze)</span>
+</button>
+</div>
+<!-- Explicit Safety Disclaimer -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">gshield</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-snug">
+<strong class="font-semibold text-on-surface">Guaranteed Human-in-the-Loop:</strong> JobHunt Autopilot AI never sends automated emails directly from your account without explicit confirmation. Messages are drafted strictly for your manual review and approval.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB 2: INTERVIEW PREPARATION & BRIEFS SECTION -->
+<div class="flex flex-col gap-space-lg" id="section-interview">
+<!-- Section Sub-header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary">psychology</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Upcoming Interview Dossiers</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Live AI-synthesized intelligence cards tailored from real job specs, interview rounds, and tech stacks.
+          </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active Pipeline:</span>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">Zepto • Razorpay • Blinkit</span>
+</div>
+</div>
+<!-- Zepto Detailed Dossier Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md relative overflow-hidden">
+<!-- Header Banner & Stage -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-sm">
+<div class="flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface font-extrabold text-xl shrink-0">
+              ZP
+            </div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Zepto — Senior Frontend Engineer</span>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+                  Round 2: Architecture Deep Dive
+                </span>
+</div>
+<div class="flex flex-wrap items-center gap-3 mt-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+                  Tomorrow, 2:00 PM IST (45 mins)
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+                  Google Meet (Link in Calendar)
+                </span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">person</span>
+                  Interviewer: Siddharth Rao (Principal Staff)
+                </span>
+</div>
+</div>
+</div>
+<!-- Download Full Briefing Action -->
+<div class="flex items-center gap-2 self-start lg:self-auto">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold shadow-sm transition-all" onclick="downloadPdf()" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Download Full PDF Briefing Sheet</span>
+</button>
+</div>
+</div>
+<!-- Recruiter Notes Parsed Callout Banner -->
+<div class="p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-secondary shrink-0">tips_and_updates</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold">Extracted Recruiter Directive &amp; Round Scope:</span>
+<p class="font-body-md text-body-md text-on-surface italic mt-0.5">
+                “Focus heavily on IndexedDB caching, Service Worker lifecycle, and Core Web Vitals optimization under ultra-low latency constraints (sub-10 minute grocery cart).”
+              </p>
+</div>
+</div>
+<span class="shrink-0 px-2.5 py-1 rounded bg-surface-container font-mono-data text-mono-data text-on-surface-variant">Parsed from recruiter email</span>
+</div>
+<!-- AI Generated Preparation Pillars (3 High-Density Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-xs">
+<!-- Column A: Likely Technical Inquiries -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-md bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[14px]">code</span>
+</div>
+<span class="font-headline-sm text-[14px] text-on-surface font-bold">Likely Technical Inquiries</span>
+</div>
+<span class="font-mono-data text-[11px] text-secondary font-bold">4 Predicted</span>
+</div>
+<div class="flex flex-col gap-2 mt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1. Cache-First vs. Stale-While-Revalidate</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">How would you architect offline product catalog browsing when 40,000 SKUs are locally synced in IndexedDB?</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">2. Service Worker Sync Queues</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Designing fallback transaction replay when a user clicks ‘Place Order’ entering an elevator dead zone.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">3. INP &amp; Layout Shift in Flash Carts</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Preventing Cumulative Layout Shift (CLS) during rapid real-time flash-sale price surges and ticker updates.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">4. Memory Leaks in Single Page Checkout</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Profiling micro-frontend DOM detachment under sustained high-frequency WebSockets telemetry.</p>
+</div>
+</div>
+</div>
+<!-- Column B: Targeted Behavioral Queries -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-md bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[14px]">groups</span>
+</div>
+<span class="font-headline-sm text-[14px] text-on-surface font-bold">Targeted Behavioral Queries</span>
+</div>
+<span class="font-mono-data text-[11px] text-on-surface-variant">STAR Framework</span>
+</div>
+<div class="flex flex-col gap-2 mt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">1. Critical Production Outage</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Describe handling a catastrophic checkout UI breakage during peak festive surge with zero rollbacks allowed.</p>
+<span class="font-mono-data text-[10px] text-secondary font-semibold">Tip: Cite PhonePe scale stats</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">2. Technical Debt vs Feature Ship</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">How do you push back on product managers requesting an un-architected quick feature that degrades client-side memory?</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">3. Cross-functional Mentorship</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Guiding 3 junior engineers to adopt strict TypeScript interfaces without slowing sprint velocity.</p>
+</div>
+</div>
+</div>
+<!-- Column C: Smart Inquiries for Interviewer -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-md bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[14px]">help_outline</span>
+</div>
+<span class="font-headline-sm text-[14px] text-on-surface font-bold">Smart Inquiries to Ask</span>
+</div>
+<span class="font-mono-data text-[11px] text-secondary font-bold">High Signal</span>
+</div>
+<div class="flex flex-col gap-2 mt-1">
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">“How does Zepto manage state drift between the driver geo-pings and consumer cart?”</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Demonstrates acute comprehension of ultra-fast grocery delivery real-time constraints.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">“What is the current build artifact budget for web-storefront bundle sizes?”</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Signals immediate ownership of Core Web Vitals and low-tier Android network speeds in tier-2 cities.</p>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">“What does success look like for this role in the first 90 days?”</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Reveals organizational readiness and internal telemetry maturity of the immediate squad.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Card Mini-Bar: Additional active rounds -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Other Ready Dossiers:</span>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-body-sm text-xs text-on-surface font-medium">Razorpay (System Design • Friday)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest font-body-sm text-xs text-on-surface font-medium">Blinkit (Bar Raiser • Oct 24)</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-bold flex items-center gap-1" onclick="switchMainTab('interview')" type="button">
+<span>Explore All 3 Dossiers</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Live Toast Feedback Notification -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none p-space-md rounded-xl bg-primary-container text-on-primary-container shadow-xl flex items-center gap-space-sm" id="live-toast">
+<span class="material-symbols-outlined text-secondary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-message">Draft copied to clipboard!</span>
+</div>
+</div>
+</div>
+<script>
+  const draftsData = {
+    phonepe: {
+      company: 'PhonePe',
+      subject: 'Re: PhonePe Backend Engineer Application — Following up on our initial conversation (Arjun Sharma)',
+      body: `Dear Neha,\n\nI hope you're having a productive week.\n\nI'm checking in regarding our conversation on October 12th for the Backend Engineer role at PhonePe. I remain deeply enthusiastic about the team's work scaling distributed transaction pipelines on high-throughput microservices.\n\nPlease let me know if there are any additional code samples, architectural case studies, or portfolio references I can provide to support the evaluation process.\n\nLooking forward to hearing from you.\n\nWarm regards,\nArjun Sharma`,
+      polite: `Dear Neha,\n\nI hope you're having a productive week.\n\nI'm checking in regarding our conversation on October 12th for the Backend Engineer role at PhonePe. I remain deeply enthusiastic about the team's work scaling distributed transaction pipelines on high-throughput microservices.\n\nPlease let me know if there are any additional code samples, architectural case studies, or portfolio references I can provide to support the evaluation process.\n\nLooking forward to hearing from you.\n\nWarm regards,\nArjun Sharma`,
+      value: `Dear Neha,\n\nHope your week is off to a great start.\n\nFollowing our conversation on October 12th around PhonePe's transaction throughput, I actually published an architectural breakdown on idempotency key caching in distributed Kafka queues that addresses the exact scale bottlenecks we touched upon. I've attached the quick brief here.\n\nWould love to know if the team has had a moment to review my profile for the Backend Engineer position.\n\nBest,\nArjun Sharma`,
+      warm: `Hi Neha,\n\nJust dropping a quick friendly note to check in! I thoroughly enjoyed our conversation on October 12th discussing PhonePe's engineering culture and high-throughput systems.\n\nNo urgency—just wanted to reaffirm my strong excitement about the role and see how next steps are looking.\n\nBest,\nArjun`
+    },
+    atlassian: {
+      company: 'Atlassian',
+      subject: 'Following up: Senior Full Stack Developer Application — Arjun Sharma',
+      body: `Hi Jessica & Team,\n\nI wanted to briefly follow up on my application submitted on October 12th for the Senior Full Stack Developer position at Atlassian.\n\nGiven my extensive background with distributed React architectures and high-density Jira integrations, I am very eager to contribute to your core collaboration products.\n\nThank you for your time and consideration.\n\nBest regards,\nArjun Sharma`,
+      polite: `Hi Jessica & Team,\n\nI wanted to briefly follow up on my application submitted on October 12th for the Senior Full Stack Developer position at Atlassian.\n\nGiven my extensive background with distributed React architectures and high-density Jira integrations, I am very eager to contribute to your core collaboration products.\n\nThank you for your time and consideration.\n\nBest regards,\nArjun Sharma`,
+      value: `Hi Jessica,\n\nSince submitting my application for the Senior Full Stack role on Oct 12th, I took the liberty of benchmarking Atlassian's Forge app framework for asynchronous state hydrate rates.\n\nHappy to share the mini-repo if your engineering hiring squad is interested!\n\nBest,\nArjun Sharma`,
+      warm: `Hi Jessica,\n\nHope you are having a wonderful week! Checking in on my application for the Senior Full Stack position. Really looking forward to the possibility of collaborating with Atlassian.\n\nWarmly,\nArjun`
+    },
+    cred: {
+      company: 'CRED',
+      subject: 'CRED Frontend Architect — Take-Home Assignment Submission Status (Arjun Sharma)',
+      body: `Dear Siddharth,\n\nI hope all is well with you.\n\nI wanted to check in regarding the design system take-home repository I delivered on October 11th for the Frontend Architect role at CRED.\n\nI am eager to hear any engineering feedback or dive deeper into the micro-animation and state cache choices during our next discussion.\n\nBest regards,\nArjun Sharma`,
+      polite: `Dear Siddharth,\n\nI hope all is well with you.\n\nI wanted to check in regarding the design system take-home repository I delivered on October 11th for the Frontend Architect role at CRED.\n\nI am eager to hear any engineering feedback or dive deeper into the micro-animation and state cache choices during our next discussion.\n\nBest regards,\nArjun Sharma`,
+      value: `Hi Siddharth,\n\nFollowing my take-home design system submission on Oct 11, I added an automated Lighthouse CI benchmark showing 99+ Core Web Vitals on the mobile drawer components.\n\nLooking forward to reviewing it together.\n\nBest,\nArjun`,
+      warm: `Hi Siddharth,\n\nHope you're having a smooth week! Wanted to ping you quickly to ensure my repo link arrived safely and see if any questions arose.\n\nCheers,\nArjun`
+    },
+    swiggy: {
+      company: 'Swiggy',
+      subject: 'Check-in: Swiggy Engineering Manager Referral — Arjun Sharma',
+      body: `Hi Rohan & Talent Partner,\n\nI hope you are doing well.\n\nFollowing up on our warm referral touchpoint on October 9th regarding the engineering team at Swiggy. I wanted to see if there are any updates regarding portfolio reviews or upcoming screen slots.\n\nThank you again for your assistance.\n\nBest,\nArjun Sharma`,
+      polite: `Hi Rohan & Talent Partner,\n\nI hope you are doing well.\n\nFollowing up on our warm referral touchpoint on October 9th regarding the engineering team at Swiggy. I wanted to see if there are any updates regarding portfolio reviews or upcoming screen slots.\n\nThank you again for your assistance.\n\nBest,\nArjun Sharma`,
+      value: `Hi Rohan,\n\nHope you're doing great. Since we spoke on Oct 9, I reviewed Instamart's cart rehydration telemetry during surge hours and put together a few optimization hypotheses.\n\nHappy to walk through them with the hiring manager whenever convenient!\n\nBest,\nArjun`,
+      warm: `Hi Rohan,\n\nHope things are going great with the new launch! Just checking in to see if any updates came down the pipeline regarding the team referral.\n\nThanks,\nArjun`
+    }
+  };
+
+  let currentApp = 'phonepe';
+  let currentTone = 'polite';
+
+  function showToast(message, icon = 'check_circle') {
+    const toast = document.getElementById('live-toast');
+    const toastMsg = document.getElementById('toast-message');
+    const toastIcon = document.getElementById('toast-icon');
+    if (!toast || !toastMsg) return;
+    
+    toastMsg.textContent = message;
+    toastIcon.textContent = icon;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }, 2800);
+  }
+
+  function selectApp(appKey) {
+    currentApp = appKey;
+    const apps = ['phonepe', 'atlassian', 'cred', 'swiggy'];
+
+    apps.forEach(key => {
+      const card = document.getElementById(`app-card-${key}`);
+      const indicator = document.getElementById(`indicator-${key}`);
+      if (card && indicator) {
+        if (key === appKey) {
+          card.classList.add('bg-surface-container-lowest');
+          card.classList.remove('hover:bg-surface-container-low/70');
+          indicator.classList.remove('bg-transparent');
+          indicator.classList.add('bg-secondary');
+        } else {
+          card.classList.add('hover:bg-surface-container-low/70');
+          indicator.classList.remove('bg-secondary');
+          indicator.classList.add('bg-transparent');
+        }
+      }
+    });
+
+    const data = draftsData[appKey];
+    document.getElementById('target-company-badge').textContent = data.company;
+    document.getElementById('email-subject').value = data.subject;
+    setTone(currentTone);
+    updateWordCount();
+  }
+
+  function setTone(tone) {
+    currentTone = tone;
+    const tones = ['polite', 'value', 'warm'];
+    tones.forEach(t => {
+      const btn = document.getElementById(`tone-${t}`);
+      if (!btn) return;
+      if (t === tone) {
+        btn.className = 'px-3.5 py-1.5 rounded-md bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-sm flex items-center gap-1.5 transition-all';
+      } else {
+        btn.className = 'px-3.5 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1.5 transition-all';
+      }
+    });
+
+    const data = draftsData[currentApp];
+    const bodyElem = document.getElementById('email-body');
+    if (bodyElem && data && data[tone]) {
+      bodyElem.value = data[tone];
+      updateWordCount();
+    }
+  }
+
+  function updateWordCount() {
+    const text = document.getElementById('email-body').value || '';
+    const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+    const countEl = document.getElementById('word-count');
+    if (countEl) countEl.textContent = `${words} words`;
+  }
+
+  function copyDraft() {
+    const text = document.getElementById('email-body').value;
+    navigator.clipboard.writeText(text).then(() => {
+      const copyText = document.getElementById('copy-text');
+      copyText.textContent = 'Copied to Clipboard!';
+      showToast('Draft copied to clipboard! Ready to paste into Gmail.');
+      setTimeout(() => {
+        copyText.textContent = 'Copy Draft to Clipboard';
+      }, 2500);
+    }).catch(() => {
+      showToast('Copied text manually!', 'content_copy');
+    });
+  }
+
+  function openMailClient() {
+    const subject = encodeURIComponent(document.getElementById('email-subject').value);
+    const body = encodeURIComponent(document.getElementById('email-body').value);
+    showToast('Opening default email client...', 'forward_to_inbox');
+    window.location.href = `mailto:?subject=${subject}&body=${body}`;
+  }
+
+  function markSent() {
+    showToast(`Marked ${draftsData[currentApp].company} follow-up sent. Inactivity counter snoozed for 7 days!`, 'verified');
+  }
+
+  function regenerateDraft() {
+    showToast('Gemini Flash 2.5 re-synthesizing draft tone and phrasing...', 'auto_awesome');
+    setTimeout(() => {
+      setTone(currentTone);
+      showToast('Refreshed with high-conviction phrasing!', 'check_circle');
+    }, 600);
+  }
+
+  function shuffleSubject() {
+    const subjects = [
+      `Following up on ${draftsData[currentApp].company} — Next Steps (Arjun Sharma)`,
+      `Quick update & check-in: ${draftsData[currentApp].company} Application`,
+      `Re: Conversation on October 12th — Arjun Sharma`
+    ];
+    const randomSub = subjects[Math.floor(Math.random() * subjects.length)];
+    document.getElementById('email-subject').value = randomSub;
+    showToast('AI suggested a new high-open subject line.', 'cached');
+  }
+
+  function batchDraftAll() {
+    showToast('Generated 4 high-probability follow-up drafts via Gemini 2.5.', 'mark_email_read');
+  }
+
+  function downloadPdf() {
+    showToast('Compiling 6-page comprehensive Zepto Interview Dossier PDF...', 'download');
+  }
+
+  function switchMainTab(tab) {
+    const followupsBtn = document.getElementById('tab-btn-followups');
+    const interviewBtn = document.getElementById('tab-btn-interview');
+    const sectionFollowups = document.getElementById('section-followups');
+    const sectionInterview = document.getElementById('section-interview');
+
+    if (tab === 'followups') {
+      followupsBtn.className = 'flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all duration-200';
+      interviewBtn.className = 'flex items-center gap-2 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all duration-200';
+      sectionFollowups.classList.remove('hidden');
+      sectionInterview.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      interviewBtn.className = 'flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm transition-all duration-200';
+      followupsBtn.className = 'flex items-center gap-2 px-4 py-2 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all duration-200';
+      sectionInterview.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  document.getElementById('email-body').addEventListener('input', updateWordCount);
+</script></main></div></body></html>
